@@ -1,0 +1,3218 @@
+\chapter{Pembangunan Aplikasi}
+
+\section{Pengenalan}
+Bab ini menjelaskan proses reka bentuk dan pembangunan aplikasi \textit{AR Alphabets} yang direka untuk menyokong pembelajaran literasi awal di kalangan murid prasekolah. Proses ini merangkumi beberapa fasa utama, termasuk analisis keperluan, reka bentuk instruksional, pembangunan kandungan dan fungsi, serta penilaian awal terhadap keberkesanan dan kebolehgunaan aplikasi.\\
+
+\hspace{1cm} Pendekatan pembangunan yang digunakan dalam kajian ini berasaskan model reka bentuk sistematik dan prinsip-prinsip teori pembelajaran multimedia seperti yang diketengahkan oleh Mayer (2001). Pelaksanaan pembangunan juga menekankan elemen interaktiviti, kebolehgunaan, kebolehcapian, serta kesesuaian kandungan dengan tahap perkembangan kognitif murid.\\
+
+\hspace{1cm} Maklumat dalam bab ini disusun dalam urutan logik, bermula dengan analisis keperluan, diikuti dengan strategi reka bentuk instruksional, proses pembangunan, dan diakhiri dengan pendekatan penilaian dan refleksi pembangunan. Huraian ini disokong dengan justifikasi reka bentuk, carta alir pembangunan, tangkap layar (screenshot) aplikasi, serta dokumentasi komponen-komponen teknikal yang relevan.\\
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{proses.pdf}
+    \caption{Proses Pembangunan AR Alpabets}
+    \label{fig:enter-label}
+\end{figure}
+\clearpage
+\subsection{Keperluan Sistem} Dalam pembangunan aplikasi ini, terdapat beberapa keperluan sistem yang perlu dipenuhi untuk memastikan aplikasi berfungsi dengan baik. Pertama, peranti mudah alih yang digunakan mesti menyokong teknologi Augmented Reality (AR) seperti Android atau iOS dengan spesifikasi minimum, termasuk RAM 3GB, kamera 8MP, dan pemproses grafik yang sesuai. Sebagai contoh, aplikasi ini akan berfungsi dengan baik pada peranti seperti Samsung Galaxy S9 atau iPhone 11 yang memenuhi kriteria tersebut. Selain itu, sambungan internet diperlukan untuk memuat turun dan mengemas kini aplikasi agar pengguna dapat menikmati kandungan terkini. Di samping itu, sistem operasi peranti haruslah terkini, seperti Android 8.0 ke atas atau iOS 12 ke atas, untuk memastikan aplikasi beroperasi dengan efisien tanpa masalah. Penting juga untuk memastikan storan dalaman mencukupi, dengan sekurang-kurangnya 200MB ruang kosong, bagi membolehkan aplikasi beroperasi dengan lancar tanpa sebarang gangguan.
+\subsection{Keperluan Perisian:}
+Selain dari keperluan sistem, terdapat juga keperluan perisian yang perlu dipatuhi dalam proses pembangunan aplikasi ini. Pertama, penggunaan platform pembangunan Augmented Reality seperti Unity3D dengan AR Foundation atau ARCore/ARKit adalah penting untuk memastikan integrasi teknologi AR dalam aplikasi. Sebagai contoh, Unity3D telah terbukti berkesan dalam pembangunan aplikasi AR yang menarik dan interaktif. Selain itu, kemahiran dalam bahasa pengaturcaraan seperti C\#, Swift, atau Java/Kotlin adalah amat diperlukan bagi menghasilkan aplikasi yang berkualiti. Contohnya, penggunaan bahasa pengaturcaraan Swift adalah krusial untuk pengembangan aplikasi iOS yang efektif dan berkualiti tinggi. Di samping itu, penggunaan perisian reka bentuk grafik seperti Adobe Illustrator atau Photoshop adalah penting untuk memastikan antara muka aplikasi menawan dan menarik bagi pengguna. Tambahan pula, pengintegrasian pangkalan data untuk penyimpanan maklumat pengguna dan kemajuan pembelajaran adalah sangat penting untuk memberikan pengalaman pengguna yang dipersonakan dan interaktif. Penggunaan API untuk pengecaman objek serta integrasi multimedia seperti audio dan video juga penting untuk memperkayakan pengalaman pengguna dalam aplikasi.
+\subsection{Keperluan Pengguna}
+Tambahan pula, keperluan pengguna juga perlu dipertimbangkan dalam pengembangan aplikasi ini. Pertama, antara muka aplikasi perlu direka agar mesra pengguna dan mudah difahami oleh kanak-kanak, supaya mereka dapat menggunakan aplikasi tanpa masalah. Sebagai contoh, menggunakan warna-warna yang ceria dan butang-butang yang mudah dikenali akan menarik perhatian kanak-kanak untuk menggunakan aplikasi dengan lebih aktif. Selain daripada itu, penyediaan panduan penggunaan dan tutorial interaktif adalah penting untuk membantu pengguna memahami cara menggunakan aplikasi dengan baik. Di samping itu, ciri keselamatan dan privasi bagi data pengguna mesti diberi perhatian agar maklumat pengguna tidak disalahgunakan atau terdedah kepada pihak yang tidak bertanggungjawab. 
+
+\hspace{1cm} Kandungan pembelajaran dalam aplikasi juga perlu menarik dan interaktif untuk mengekalkan perhatian pengguna dalam proses pembelajaran. Sebagai contoh, penggunaan animasi atau permainan interaktif dalam aplikasi dapat membuat pembelajaran lebih menyeronokkan dan berkesan. Sokongan pelbagai bahasa juga perlu diambil kira jika aplikasi ini dijangkakan digunakan oleh pengguna dari pelbagai latar belakang bahasa.
+
+
+\hspace{1cm} Kombinasi keperluan sistem, perisian, dan pengguna ini akan memastikan aplikasi dapat berfungsi dengan baik, serta memberikan pengalaman pembelajaran yang lebih menarik, interaktif, dan berkesan kepada pengguna. Penerapan Model ADDIE dalam langkah-langkah pembangunan aplikasi ini, bermula dengan fasa analisis, telah membantu mengenal pasti keperluan pembelajaran literasi awal kanak-kanak prasekolah. Langkah-langkah yang diambil termasuk reka bentuk sistem dan perisian yang sesuai, pembangunan aplikasi yang efektif, ujian sistem dan pengguna, penambahbaikan berkaitan maklum balas, pelancaran aplikasi, serta pemantauan dan penyelenggaraan aplikasi. Dengan pendekatan yang teliti dan terperinci ini, diharapkan aplikasi yang dibangunkan dapat memberikan manfaat yang maksimal kepada pengguna yang disasarkan.
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{addiess.pdf}
+    \caption{Model ADDIE}
+    \label{fig:addie}
+\end{figure}
+
+
+\hspace{1cm} Setiap langkah ini dirancang dengan teliti untuk memastikan aplikasi bukan sahaja berfungsi secara teknikal, tetapi juga menyokong pedagogi yang sesuai untuk murid prasekolah.Pada fasa perancangan, penyelidik mengumpul segala keperluan asas yang diperlukan untuk pembangunan aplikasi \textit{AR Alphabets}. Langkah utama termasuk:
+Penyediaan Senarai Semak Pembangunan Aplikasi Senarai semak ini memastikan aplikasi memenuhi objektif pembelajaran literasi dengan pendekatan interaktif.
+Analisis keperluan sistem merangkumi keperluan fungsi dan bukan fungsi bagi sistem yang dibangunkan. Keperluan fungsi merangkumi ciri utama yang diperlukan untuk memastikan sistem dapat beroperasi mengikut objektif yang ditetapkan. Keperluan bukan fungsi pula merangkumi aspek seperti prestasi, keselamatan, kebolehgunaan, dan skalabiliti sistem.Dalam konteks sistem \textit{AR Alphabets,} beberapa aspek penting termasuk yang akan dibincangkan dalam bab ini.
+
+Bahagian  ini mengupas keperluan sistem dan peralatan bagi aplikasi \textit{AR Alphabets }berdasarkan fasa \textit{Analysis} dalam model ADDIE. Pendekatan ini memastikan semua aspek teknikal dan pedagogi telah diteliti sebelum melangkah ke fasa reka bentuk dan pembangunan.
+
+
+\subsection{Jenis Keperluan}
+Keperluan boleh dikategorikan kepada dua jenis utama:
+
+\subsubsection{Keperluan Fungsian (\textit{Functional Requirements})}
+Keperluan yang menentukan apa yang sistem perlu lakukan, termasuk:
+
+\begin{enumerate}[label=\roman*.]
+    \item Ciri dan fungsi utama yang mesti ada.
+    \item Interaksi pengguna dengan sistem.
+    \item Proses input dan output yang dijangkakan.\\
+
+
+\end{enumerate}
+
+\subsubsection{Keperluan Bukan Fungsian (\textit{Non-Functional Requirements})}
+
+Keperluan yang menentukan bagaimana sistem perlu beroperasi, seperti:
+
+\begin{enumerate}[label=\roman*.]
+    \item Prestasi dan kebolehpercayaan (contoh: kelajuan pemprosesan data).
+
+    \item Keselamatan dan kebolehgunaan (contoh: sistem mesti dilindungi daripada serangan siber).
+
+    \item Keserasian dengan perkakasan dan perisian lain.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{---- Analisis Keperluan (1).pdf}
+    \caption{Analisis Keperluan}
+    \label{fig:enteIIIlabel}
+\end{figure}
+
+\subsection{Panduan Langkah }
+
+
+Berikut ialah langkah-langkah utama untuk mengenal pasti keperluan bagi pembangunan sistem atau produk:
+
+\subsection{Pengumpulan Keperluan}
+
+
+ Temu bual dengan pengguna akhir untuk memahami keperluan mereka.  Kajian sistem sedia ada untuk mengenal pasti penambahbaikan yang perlu dilakukan. Analisis pasaran bagi memahami standard industri dan trend teknologi terkini.
+
+\subsection{ Pengkelasan Keperluan}
+
+ Bahagikan keperluan kepada fungsian dan bukan fungsian. Tentukan keutamaan keperluan, seperti keperluan kritikal dan keperluan tambahan.
+
+\subsection{Dokumentasi Keperluan}
+ Gunakan dokumen spesifikasi keperluan untuk menyusun maklumat secara sistematik. Gunakan UML atau diagram aliran untuk mewakili keperluan dengan visual yang jelas.
+
+\subsection{Pengesahan dan Validasi Keperluan}
+ Semak dengan pengguna akhir sama ada keperluan yang ditentukan memenuhi jangkaan mereka.  Uji prototaip sistem bagi memastikan keperluan berfungsi dengan baik sebelum pembangunan penuh.
+
+\subsection{Pelaksanaan dan Pemantauan}
+ Pastikan pembangunan sistem selaras dengan dokumen keperluan. Lakukan ujian sistem berkala untuk memastikan sistem terus memenuhi keperluan pengguna.
+
+
+\begin{table}[H]
+\centering
+\caption{Analisis Keperluan Peralatan untuk Aplikasi AR Alphabets}
+\label{jadual:keperluan-peralatan}
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\textbf{Aspek} & \textbf{Keperluan} \\
+\hline
+\textbf{Perkakasan} &
+\parbox[t]{\linewidth}{
+\begin{itemize}
+    \item \textbf{Sensor Kamera AR:} Menyokong pengesanan objek dan interaksi AR secara masa nyata.
+    \item \textbf{Peranti Sokongan Minimum:} Android versi 8.0 ke atas, dengan GPU yang menyokong animasi dan pemprosesan 3D.
+\end{itemize}
+} \\
+\hline
+\textbf{Perisian} &
+\parbox[t]{\linewidth}{
+\begin{itemize}
+    \item \textbf{Sistem Operasi:} Android 8.0 atau lebih tinggi, untuk memastikan keserasian dengan pustaka AR terkini.
+    \item \textbf{Rangkaian:} Sambungan internet diperlukan untuk kemas kini data dan penyimpanan awan.
+\end{itemize}
+} \\
+\hline
+\textbf{Keserasian dan Kecekapan} &
+\parbox[t]{\linewidth}{
+\begin{itemize}
+    \item \textbf{Keserasian Platform:} Aplikasi mesti dapat menyesuaikan diri dengan pelbagai saiz skrin peranti mudah alih.
+    \item \textbf{Kecekapan Operasi:} Prestasi sistem dioptimumkan agar tidak membebankan sumber bateri dan membolehkan animasi AR berfungsi lancar tanpa gangguan.
+\end{itemize}
+} \\
+\hline
+\end{tabularx}
+\end{table}
+Analisis keperluan ini menjadi panduan utama dalam pembangunan teknikal aplikasi agar sesuai dengan kemampuan peranti pengguna sasar, khususnya dalam kalangan guru dan murid prasekolah yang menggunakan peranti Android dalam aktiviti pembelajaran harian mereka.
+\clearpage
+
+
+\subsection{Kesimpulan}
+Menentukan spesifikasi keperluan dengan jelas adalah penting dalam pembangunan sistem atau produk. Ia memastikan sistem berfungsi dengan baik, memenuhi keperluan pengguna, dan berjalan dengan prestasi yang optimum. Dengan mengikuti panduan langkah demi langkah, setiap aspek keperluan boleh dikenalpasti dengan lebih terperinci dan sistem dapat dibangunkan dengan lebih efisien.
+
+\section{Rekabentuk, Pembangunan }
+Fasa reka bentuk (\textit{Design}) merupakan langkah kritikal dalam pembangunan aplikasi pendidikan. Dalam konteks AR Alphabets, reka bentuk ini melibatkan:
+\begin{enumerate}[label=\textendash]
+    \item \textbf{Reka Bentuk Antaramuka (UI/UX):} Mewujudkan pengalaman pengguna yang intuitif dan mesra kanak-kanak.
+    \item \textbf{Struktur Aplikasi:} Membahagikan modul dan aliran proses untuk kecekapan sistem.
+    \item \textbf{Pemilihan Teknologi:} Memastikan kestabilan dan keberkesanan platform AR yang digunakan.
+    \item \textbf{Interaksi Pengguna:} Menyusun kaedah interaksi yang memaksimumkan penglibatan pembelajaran.
+\end{enumerate}
+ Aplikasi ini bertujuan sebagai bahan bantu pembelajaran bagi murid prasekolah yang memerlukan pendekatan yang lebih visual dan interaktif dalam memahami huruf serta fonetik secara efektif.Dengan adanya pangkalan data, aplikasi dapat menyimpan dan memaparkan huruf dalam bentuk animasi 3D, lengkap dengan audio fonetik, bagi membantu murid memahami bunyi dan bentuk huruf dengan lebih mendalam.Antaramuka yang mesra pengguna direka supaya murid boleh mengendalikan aplikasi dengan mudah, membolehkan mereka menavigasi antara huruf, melihat animasi interaktif, dan mendengar sebutan fonetik secara langsung.Selain itu, aplikasi ini juga merangkumi elemen gamifikasi, seperti permainan mengenal huruf, kuiz interaktif, dan latihan fonetik, bagi menjadikan pengalaman pembelajaran lebih menyeronokkan dan berkesan
+Aplikasi \textit{AR Alphabets} terdiri daripada dua komponen utama, iaitu:
+% Enumerated list with left-aligned items and bold labels
+
+\section{Pengkalan Data]
+
+
+\noindent Menyimpan maklumat huruf, animasi 3D, dan audio fonetik, memastikan semua data tersedia untuk dipaparkan dalam aplikasi dengan lancar dan konsisten. Sistem pengkalan data berfungsi sebagai repositori utama, membolehkan aplikasi mengakses dan mengurus kandungan dengan cekap serta menyokong kemaskini atau penambahan maklumat dari masa ke masa.}
+    
+\section{{Pengimbas AR} \\
+
+
+Menggunakan kamera dan teknologi penjejakan untuk mengenal pasti huruf dalam dunia sebenar dan memaparkan versi interaktif 3D AR, memberikan pengalaman pembelajaran yang lebih imersif. Teknologi ini membolehkan pengguna melihat huruf dalam bentuk 3D dan berinteraksi secara langsung dengan elemen AR, meningkatkan pemahaman dan minat mereka terhadap pembelajaran fonetik.}
+    Fasa reka bentuk (\textit{Design}) merupakan langkah kritikal dalam pembangunan aplikasi pendidikan. Dalam konteks \textit{AR Alphabets}, reka bentuk ini melibatkan:
+\begin{enumerate}[label=\textendash]
+    \item \textbf{Reka Bentuk Antaramuka (UI/UX):} Mewujudkan pengalaman pengguna yang intuitif dan mesra kanak-kanak.
+    \item \textbf{Struktur Aplikasi:} Membahagikan modul dan aliran proses untuk kecekapan sistem.
+    \item \textbf{Pemilihan Teknologi:} Memastikan kestabilan dan keberkesanan platform AR yang digunakan.
+    \item \textbf{Interaksi Pengguna:} Menyusun kaedah interaksi yang memaksimumkan penglibatan pembelajaran.
+\end{enumerate}
+
+Untuk memastikan aplikasi \textit{AR Alphabets} mudah digunakan dan efektif, beberapa prinsip utama diterapkan:
+\begin{enumerate}[label=\roman]
+    \item \textbf{Kesederhanaan:} Antara muka minimalis dengan navigasi yang jelas.
+    \item \textbf{Konsistensi Visual:} Warna dan ikon seragam untuk keselesaan pengguna.
+    \item \textbf{Maklum Balas Segera:} Sistem memberi respons pantas terhadap interaksi pengguna.
+    \item \textbf{Gamifikasi:} Elemen interaktif seperti animasi dan bunyi untuk meningkatkan keterlibatan.
+\end{enumerate}
+\clearpage
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{antaramuk.pdf}
+    \caption{Papan Cerita Antaramuka}
+    \label{fig:enterlabel}
+\end{figure}
+\clearpage
+\subsection{Storyboard }\\
+
+\subsubsection{{Storyboard dalam Pembangunan Media Interaktif}}Storyboard kini semakin meluas penggunaannya dalam merancang pembangunan laman web serta projek media interaktif seperti iklan, filem pendek, permainan digital, dan bahan pembelajaran (Aziz et al., 2021). Dalam konteks pembangunan, storyboard digunakan pada peringkat awal perancangan dan reka bentuk untuk menggambarkan elemen interaktif seperti suara, pergerakan, dan tindak balas pengguna dalam antara muka sistem (Zulkifli \& Lim, 2020).\\Istilah \textit{storyboard} juga telah diintegrasikan secara meluas dalam pembangunan laman web, pembangunan perisian, serta perancangan pengajaran sebagai alat visual untuk menerangkan aliran interaksi pengguna. Ia membantu membentuk visualisasi susunan skrin, pautan, dan respons sistem terhadap input pengguna (Rahim \& Alias, 2022). Dalam pembangunan antara muka grafik pengguna (GUI), storyboard berfungsi sebagai panduan visual yang menyusun struktur kandungan secara sistematik. Sebaliknya, peta laman atau carta aliran digunakan untuk merancang seni bina maklumat, navigasi, struktur pautan, organisasi halaman, dan pengalaman pengguna, khususnya dalam situasi interaksi kompleks atau urutan audiovisual yang memerlukan perhatian reka bentuk secara terperinci (Latif \& Kamarudin, 2021). Sebagai contoh, dalam pembangunan laman web, storyboard digunakan oleh pereka untuk menunjukkan bagaimana pengguna akan berinteraksi dengan elemen seperti butang, ikon, dan menu navigasi. Dengan menggunakan storyboard, pereka dapat menggambarkan setiap langkah interaksi secara jelas dan menyampaikan idea kepada pengaturcara web dengan lebih berkesan. Dalam pembangunan permainan digital pula, storyboard membantu pengembang merancang peringkat permainan, aksi watak, dan naratif permainan secara sistematik sebelum masuk ke fasa pembangunan teknikal (Kassim et al., 2023). Antara kelebihan storyboard ialah keupayaannya mencerminkan perubahan naratif dan mencetuskan minat serta perhatian pengguna melalui kilas balik kronologi dan visualisasi interaktif. Pembuat storyboard perlu memiliki kecekapan dalam menyusun naratif yang menarik serta kefahaman mendalam terhadap elemen filem seperti komposisi, urutan visual, dan penyuntingan (Sulaiman \& Yusof, 2020).
+\clearpage
+
+\subsubsection{Papan Cerita Antaramuka – Modul Read}
+
+Modul ini direka bentuk untuk membantu pengguna, khususnya murid prasekolah, dalam mengenal huruf, bunyi fonetik, dan haiwan yang berkaitan dengan cara yang interaktif serta menyeronokkan. Pengguna diperkenalkan kepada huruf melalui paparan antaramuka visual yang menarik dan bersifat mesra kanak-kanak, diiringi dengan audio sebutan fonetik yang membantu dalam meningkatkan penguasaan bunyi setiap huruf (Kassim et al., 2023; Rahmawati et al., 2022).
+
+
+Keistimewaan utama modul ini ialah keupayaannya menyampaikan proses pengenalan huruf dalam bentuk pengalaman pembelajaran yang dinamik dan menarik. Dengan menggunakan pendekatan multimodal, pengguna berpeluang berinteraksi secara aktif dengan elemen pembelajaran – bukan sahaja melihat dan mendengar, malah juga merangsang tindakan pengguna melalui sentuhan atau kawalan antaramuka (Zulkifli \& Lim, 2020).
+
+
+
+
+ \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\linewidth]{-read.pdf}
+        \caption{Papan Cerita Antaramuka Modul-\textit{Read}}
+    \label{fig:AntaramukaModulWrite}
+\end{figure}
+\subsubsection{b. Papan Cerita Antaramuka – Modul WRITE}
+
+Modul WRITE dibangunkan bertujuan untuk membantu pengguna, khususnya kanak-kanak prasekolah, dalam menguasai kemahiran menulis huruf dengan teknik yang betul dan sistematik. Pengguna dibenarkan untuk menulis menggunakan jari atau peranti stylus pada skrin sesentuh, menjadikannya mudah diakses tanpa memerlukan peralatan tambahan yang kompleks. Keupayaan untuk menulis secara langsung ini memberi peluang kepada pengguna untuk mempraktikkan motor halus mereka dalam suasana digital yang menyeronokkan (Rahim \& Alias, 2022; Latif \& Kamarudin, 2021).
+
+Setiap latihan menulis didatangkan dengan elemen visual yang menarik dan berwarna-warni untuk menarik minat pengguna kanak-kanak, sekali gus merangsang tumpuan dan motivasi mereka. Aspek ini amat penting dalam konteks pendidikan awal, kerana penggunaan grafik yang berkesan dapat meningkatkan keberkesanan pembelajaran (Kassim et al., 2023; Zulkifli \& Lim, 2020).
+
+
+ \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\linewidth]{-write.pdf}
+        \caption{Papan Cerita Antaramuka Modul-\textit{Write}}
+    \label{fig:AntaramukaModulWrite}
+    
+\end{figure}
+\vspace{3cm}
+
+
+
+\subsubsection{b. Papan Cerita Antaramuka – Modul IMAGE}
+
+Modul IMAGE direka bentuk bagi memperkukuh pemahaman pengguna terhadap huruf melalui pendekatan pembelajaran visual. Objektif utama modul ini adalah untuk membantu pengguna, terutamanya murid prasekolah, mengaitkan huruf-huruf dengan gambar atau corak visual yang relevan. Proses ini bertujuan untuk memperkuatkan daya ingatan serta memudahkan pengguna mengenal pasti huruf melalui persekitaran yang mereka alami secara harian (Rahmawati et al., 2022; Paivio, 2021).
+
+Antaramuka modul ini mempersembahkan paparan interaktif di mana setiap huruf disertakan dengan imej atau objek yang sepadan. Sebagai contoh, huruf “A” dikaitkan dengan imej epal atau angsa, manakala huruf “B” dengan beruang atau botol. Hubungan antara huruf dan imej ini merangsang pembelajaran secara asosiasi visual yang terbukti dapat meningkatkan keupayaan kognitif dalam mengenal huruf (Latif \& Kamarudin, 2021; Zulkifli \& Lim, 2020).
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{-SEQ.pdf}
+    \caption{Papan Cerita Antaramuka Modul-\textit{Image}}
+    \label{fig:Papan_Cerita_Antaramuka_Image}
+\end{figure}
+
+
+\subsubsection{Papan Cerita Antaramuka – \textit{Puzzle}}
+
+Modul \textit{Puzzle} direka bentuk untuk memberikan cabaran kognitif kepada pengguna melalui aktiviti interaktif berasaskan permainan. Tujuannya adalah untuk mengukuhkan penguasaan terhadap huruf dan perkataan melalui pengalaman pembelajaran yang menyeronokkan serta merangsang kemahiran menyelesaikan masalah.
+
+Dalam modul ini, pengguna akan dipersembahkan dengan teka-teki seperti susunan huruf rawak yang perlu diatur menjadi perkataan yang betul berdasarkan imej atau petunjuk tertentu. Interaksi ini disokong oleh teknologi Augmented Reality (AR), yang membolehkan pengguna melihat maklum balas serta animasi secara langsung setelah setiap percubaan dilakukan (Radu, 2014; Norazah et al., 2022).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{PUZZLE.pdf}
+ \caption{Papan Cerita Antaramuka-\textit{Puzzle}}
+    \label{Antaramuka_Puzzle}
+\end{figure}
+\subsubsection{Papan Cerita Antaramuka – \textit{AR Mode}}
+
+Modul \textit{AR Mode} dibangunkan untuk memperkenalkan pengalaman pembelajaran huruf yang lebih imersif melalui penggunaan teknologi Realiti Tambahan (AR). Dalam modul ini, pengguna perlu mengimbas penanda khas menggunakan kamera peranti, yang kemudiannya akan mencetuskan paparan objek 3D, animasi, dan arahan visual dalam persekitaran nyata (Billinghurst \& Dünser, 2012; Rahmawati et al., 2022).
+
+Proses pembelajaran dijalankan secara interaktif, di mana pengguna akan menyelesaikan cabaran seperti menyusun huruf untuk membentuk perkataan berdasarkan klu visual atau audio yang diberikan. Interaksi ini bukan sahaja memperkukuh kefahaman konsep huruf, malah turut menggalakkan pembelajaran aktif dan menyeronokkan.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{ARMODE.pdf}
+    \caption{Papan Cerita Antaramuka-ARMode}
+    \label{fig:Papan_Cerita_Antaramuka_AR_Mode}
+\end{figure}
+
+
+
+
+\subsubsection{Papan Cerita Antaramuka – \textit{AR Mini Game}}
+
+Modul \textit{AR Mini Game} direka bentuk untuk memberikan pengalaman pembelajaran huruf yang lebih interaktif dan mendalam melalui penerapan teknologi Realiti Tambahan (AR). Dalam modul ini, pengguna berpeluang berinteraksi secara langsung dengan objek pembelajaran seperti huruf dan perkataan dalam persekitaran maya melalui pelbagai aktiviti permainan berasaskan AR (Radu, 2014; Wu et al., 2013).
+
+Sebagai contoh, pengguna mungkin diarahkan untuk mengenal pasti huruf tertentu yang muncul dalam ruang AR atau menyusun beberapa huruf menjadi perkataan yang betul berdasarkan konteks visual yang diberikan. Visualisasi interaktif ini disokong dengan animasi dan kesan khas grafik yang menarik, bertujuan meningkatkan fokus, keterlibatan, dan pemahaman pengguna terhadap isi kandungan yang dipelajari.
+
+
+
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\linewidth]{ARMODE.pdf}
+       \caption{Papan Cerita Antaramuka-\textit{AR Mini Game}}
+        \label{fig:MINI}
+    \end{figure}
+
+\vspace{6cm}
+
+
+
+\subsubsection{Papan Cerita Antaramuka – \textit{Amaran}}
+
+Modul ini dibangunkan sebagai komponen keselamatan digital dan bertujuan memberi peringatan kepada ibu bapa atau penjaga agar sentiasa memantau penggunaan aplikasi oleh anak-anak mereka. Penekanan diberikan kepada aspek kawalan dan pengawasan penggunaan peranti dalam kalangan kanak-kanak, selari dengan keperluan pembelajaran yang selamat dan bertanggungjawab (Livingstone & Helsper, 2008).
+
+
+
+Antara kelebihan utama modul ini ialah keupayaannya dalam menyampaikan mesej keselamatan digital dan tanggungjawab penggunaan kepada ibu bapa serta anak-anak secara visual. Dengan integrasi elemen amaran ini, aplikasi dapat menyumbang kepada persekitaran pembelajaran digital yang lebih terkawal, seiring dengan keperluan perlindungan data dan keselamatan kanak-kanak dalam ekosistem teknologi semasa (Plowman et al., 2010).
+
+ 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{ARM.pdf}
+   \caption{Papan Cerita Antaramuka- Amaran}
+    \label{fig:Antaramuka_Amaranl}
+\end{figure}
+\vspace{15cm}
+
+\subsubsection{Papan Cerita Antaramuka – \textit{Marker}}
+
+Modul \textit{Marker} direka bentuk sebagai salah satu komponen penting dalam aplikasi AR ini bagi membolehkan pengguna memuat turun dan menggunakan penanda (marker) secara mudah. Marker memainkan peranan utama dalam mengaktifkan elemen Augmented Reality (AR) dalam persekitaran pembelajaran interaktif (Billinghurst & Duenser, 2012). 
+
+
+
+Selain itu, fungsi ini turut membantu pengguna memahami peranan penting marker dalam pengalaman pembelajaran berasaskan AR. Dengan memahami bagaimana AR berfungsi melalui pengimbasan marker, pengguna akan lebih menghargai teknologi interaktif ini serta dapat menggunakannya secara lebih efektif dalam konteks pembelajaran literasi awal (Yuen et al., 2011).
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR.pdf}
+    \caption{Papan Cerita Antaramuka – Marker}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsubsection{Papan Cerita Antaramuka – \textit{Sub Topik}}
+
+Modul \textit{Sub Topik} direka bentuk untuk mengatur dan menyusun kandungan pembelajaran ke dalam beberapa bahagian kecil atau unit yang lebih mudah diakses oleh pengguna. Tujuan utama modul ini adalah untuk menyediakan struktur navigasi yang sistematik bagi memudahkan pengguna, terutamanya kanak-kanak prasekolah, memahami susun atur kandungan yang ditawarkan dalam aplikasi.
+
+ Setiap subtopik ditampilkan dalam bentuk ikon visual yang menarik serta disokong oleh teks ringkas, bagi membantu pengguna yang masih dalam proses menguasai literasi awal. Pemisahan kandungan kepada subtopik berasingan juga membolehkan proses pembelajaran berlaku secara bertahap, yang lebih sesuai dengan keupayaan kognitif murid prasekolah (Liu et al., 2020).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR-3.pdf}
+    \caption{Papan Cerita Antaramuka-Sub Topik}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+\subsubsection{Papan Cerita Antaramuka-Developer}
+Tujuan: Modul ini direka untuk memperkenalkan pengguna kepada pembangun aplikasi, memberikan penghargaan kepada pihak yang terlibat dalam projek ini. Ilustrasi individu yang sedang melutut sambil memegang stylus, melambangkan peranan pembangun dalam mencipta aplikasi.Teks di bawah menyatakan bahawa modul ini membantu pengguna mengenali pencipta aplikasi.
+
+Memastikan pengguna menyedari usaha di sebalik pembangunan AR Alphabets.Memberikan penghargaan kepada pasukan yang mencipta aplikasi ini.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR-5.pdf}
+    \caption{Papan Cerita Antaramuka \textit{Developer}}
+    \label{fig:Antaramuka+Developer}
+\end{figure}
+\vspace{15cm}
+
+
+
+
+
+
+\subsubsection{Papan Cerita Antaramuka\textit{-Phonics} }
+Tujuan: Modul ini membantu pengguna mengenali bunyi huruf dan cara sebutan yang betul, memastikan mereka memahami fonetik dengan interaktif. Proses:
+
+\begin{itemize}
+    \item Pengguna boleh mendengar audio fonetik bagi setiap huruf melalui animasi interaktif.
+    \item Visualisasi bunyi dipaparkan untuk membantu pengguna mengaitkan huruf dengan sebutan yang tepat. Keistimewaan:
+    \item Meningkatkan pemahaman pengguna terhadap bunyi dan fonetik huruf melalui pengalaman interaktif.
+    \item Membantu pengguna menghafal bunyi huruf dengan lebih efektif melalui contoh audio dan visual.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR-4.pdf}
+ \caption{Papan Cerita Antaramuka-\textit{Phonic}}
+    \label{fig:enter-label}
+\end{figure}
+
+\vspace{14cm}
+
+
+\subsubsection{Papan Cerita Antaramuka – Sequences}
+
+Modul \textit{Sequences} bertujuan untuk membantu pengguna memahami urutan huruf serta cara menyusunnya dengan betul. Ia menekankan kepada pola pembelajaran berasaskan susunan yang sistematik dan logik, yang penting dalam penguasaan abjad serta kemahiran awal membaca.
+
+Dalam modul ini, pengguna akan diberikan huruf secara rawak dan dikehendaki menyusunnya semula mengikut urutan yang betul. Sistem akan memberikan maklum balas secara visual dan audio sejurus selepas aktiviti selesai. Maklum balas ini membantu dalam mengukuhkan kefahaman pengguna terhadap urutan huruf melalui rangsangan pelbagai deria.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR-6.pdf}
+    \caption{Papan Cerita Antaramuka – Sequences}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsubsection{Papan Cerita Antaramuka –\textit{Splash Screen}}
+
+Modul \textit{Splash Screen} menyediakan aktiviti interaktif mewarna huruf yang direka untuk merangsang kreativiti pengguna serta meningkatkan penguasaan bentuk huruf melalui pendekatan visual. Aktiviti ini bukan sahaja menyeronokkan, tetapi juga menyumbang kepada perkembangan literasi awal kanak-kanak secara kreatif.
+
+Dalam proses pelaksanaannya, pengguna boleh mewarna huruf secara digital menggunakan stylus atau jari mereka. Animasi dan interaksi visual turut disediakan untuk menghidupkan pengalaman pembelajaran. Visualisasi ini membantu pengguna memahami bentuk huruf dengan lebih berkesan.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{KELUAR-7.pdf}
+    \caption{Papan Cerita Antaramuka – Splash Screen}}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+
+\clearpage
+
+ \subsubsection{Perancangan Penanda-A}
+Penanda A merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:\\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda A dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda A kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "J" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda A direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/a.png}
+    \caption{Perancangan Penanda-A}
+    \label{fig:A}
+\end{figure}
+\clearpage
+
+
+ \subsubsection{Perancangan Penanda-B}
+Penanda B merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:\\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda B dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda B kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "J" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda B direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/b.png}
+    \caption{Perancangan Penanda-B}
+\end{figure}
+\clearpage
+
+
+
+\subsubsection{Perancangan Penanda-C}
+Penanda C merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:\\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda C dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda BCkepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "J" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda C direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+\clearpage
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/c.png}
+    \caption{Perancangan Penanda-C}
+\end{figure}
+\clearpage
+Perancangan Penanda & Penanda atau marker merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang mengaplikasikan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara terperinci serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). \\
+\hline
+Pengenalan Penanda yang Tepat & Sistem ini mengaplikasikan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda dalam persekitaran nyata, memastikan pencegahan yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). \\
+\hline
+Audio Interaktif & Aplikasi ini menawarkan audio interaktif untuk sebutan huruf atau perkataan yang dipaparkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). \\
+\hline
+Keserasian Peranti & Penanda direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). \\
+\hline
+Pilihan Penyesuaian & Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). \\
+\hline
+
+\end{longtable}
+
+
+\clearpage
+\subsubsection{Perancangan Penanda-D}
+
+Merupakan elemen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta penyusunannya dalam konteks pembelajaran literasi awal kanak-kanak melalui pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\ 
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda D dalam persekitaran sebenar, memastikan pengecaman yang akurat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda D kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "D" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi.\\  
+\item \textbf{Keserasian Peranti:} Penanda D direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.\\  
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(3).pdf}
+    \caption{Perancangan Penanda-D}
+    \label{fig:D}
+\end{figure}
+\clearpage
+\subsubsection{Perancangan Penanda-E}
+
+akan elemen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta penyusunannya dalam konteks pembelajaran literasi awal kanak-kanak melalui pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda E dalam persekitaran sebenar, memastikan pengecaman yang akurat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda E kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "E" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi.\\  
+\item \textbf{Keserasian Peranti:} Penanda E direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.\\  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(4).pdf}
+    \caption{EPerancangan Penanda-E}
+    \label{fig:eE}
+\end{figure}
+
+\subsubsection{Perancangan Penanda F}
+
+  
+Penanda F merupakan komponen yang sangat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej canggih untuk mengesan dan menganalisis Penanda F dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda F kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "F" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda F direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.  \\
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/F.png}
+    \caption{Perancangan Penanda-F}
+    \label{fig:F}
+\end{figure}
+
+
+
+ 
+\subsubsection{{Perancangan Penanda-G}  }
+Penanda G merupakan komponen yang sangat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej canggih untuk mengesan dan menganalisis Penanda G dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda G kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "G" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda G direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.\\  
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(6).pdf}
+    \caption{Perancangan Penanda-G}
+    \label{fig:G}
+\end{figure}
+\clearpage
+ %tukartempat % %tukartempat % %tukartempat % %tukartempat %
+ %tukartempat % %tukartempat % %tukartempat % %tukartempat %
+\subsubsection{Perancangan Penanda-H}
+
+Penanda H merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya: \\ 
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda H dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda H kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "H" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda H direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah. \\ 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(7).pdf}
+    \caption{Perancangan Penanda-H}
+    \label{fig:H}
+\end{figure}
+\clearpage
+
+\subsubsection{Perancangan Penanda I}
+
+Penanda I merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:\\  
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda I dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda I kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "I" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda I direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(8).pdf}
+    \caption{Perancangan Penanda-I}
+    \label{I}
+\end{figure}
+\clearpage
+
+
+ \subsubsection{Perancangan Penanda-J}
+Penanda J merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:\\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda J dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda J kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "J" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda J direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(9).pdf}
+    \caption{Perancangan Penanda-J}
+    \label{fig:J}
+\end{figure}
+\clearpage
+
+\subsubsection{Perancangan Penanda-K}
+
+subsubsection{Perancangan Penanda-K}  
+Penanda K merupakan elemen yang sangat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang menggunakan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan cara yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\ 
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda K dalam persekitaran sebenar, memastikan pengecaman yang akurat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda K kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "K" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi.\\  
+\item \textbf{Keserasian Peranti:} Penanda K direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.
+\\
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(10).pdf}
+    \caption{Perancangan Penanda-k}
+    \label{fig:J}
+\end{figure}
+\clearpage
+
+
+
+
+\subsubsection{Perancangan Penanda-L}  
+Penanda L merupakan elemen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda L dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda L kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "L" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda L direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.\\
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(11).pdf}
+    \caption{Perancangan Penanda L}
+    \label{fig:enter-label}
+\end{figure}
+\vspace{1cm}
+
+
+
+\subsubsection{Perancangan Penanda-M}
+  
+Penanda M merupakan elemen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda M dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda M kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "M" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda M direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.  
+ 
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/M.png}
+    \caption{Perancangan Penanda M}
+    \label{fig:enter-label}
+\end{figure}
+\clearpage
+
+\subsubsection{Perancangan Penanda-N}  
+Penanda N merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda N dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda N kepada aplikasi, sistem akan mengenalinya dengan tepat sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "N" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda N direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.  
+  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(13).pdf}
+    \caption{Perancangan Penanda N}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsubsection{Perancangan Penanda-O}  
+Penanda O merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda O dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda O kepada aplikasi, sistem akan mengenalinya dengan ketepatan yang tinggi sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "O" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda O direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka. \\ 
+  
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{UC/O.png}
+    \caption{Perancangan Penanda O}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+\subsubsection{Perancangan Penanda-P}  
+Penanda P merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda P dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda P kepada aplikasi, sistem akan mengenalinya dengan ketepatan yang tinggi sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "P" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda P direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(15).pdf}
+    \caption{Perancangan Penanda-P}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsubsection{ Perancangan Penanda-Q}
+Penanda Q merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta susunan mereka dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\  
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda Q dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak menunjukkan Penanda Q kepada aplikasi, sistem akan mengenalinya dengan ketepatan yang tinggi sebelum memaparkan huruf atau perkataan yang berkaitan.\\  
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang ditampilkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "Q" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\  
+\item \textbf{Keserasian Peranti:} Penanda Q direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran pada pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan berdasarkan tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Selain itu, pengguna juga boleh memodifikasi saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka. 
+\clearpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{AAA(16).pdf}
+    \caption{Perancangan Penanda-Q}
+    \label{fig:enter-label}
+\end{figure}
+\clearpage
+\subsubsection{Perancangan Penanda-R}
+Penanda R adalah elemen yang sangat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang menggunakan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri unggul, antaranya:  \\
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini mengaplikasikan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda R dalam persekitaran nyata, menjamin pengecaman yang akurat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak memperlihatkan Penanda R kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkenaan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyajikan audio interaktif bagi sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "R" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih mendalam.  \\
+\item \textbf{Keserasian Peranti:} Penanda R direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, mempermudah akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi secara efisien pada telefon pintar, tablet, atau kamera AR yang berbeda, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberikan kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan sesuai dengan tahap kemahiran atau keperluan pembelajaran mereka (Chong et al., 2022). Selain itu, pengguna juga dapat mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kawalan penuh ke atas cara mereka belajar.  
+\clearpage
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(17).pdf}
+    \caption{erancangan Penanda-        R}
+    \label{fig:enter-label}
+\end{figure}
+\clearpage
+
+\subsubsection{Perancangan Penanda-S}
+Penanda S merupakan komponen yang amat penting dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf secara individu serta pengaturannya dalam konteks pembelajaran literasi awal kanak-kanak dengan pendekatan yang interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya: \\
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini memanfaatkan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda S dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Sebagai contoh, apabila seorang kanak-kanak mengemukakan Penanda S kepada aplikasi, sistem akan mengenalinya dengan ketepatan yang tinggi sebelum memaparkan huruf atau perkataan yang relevan.\\
+\item \textbf{Audio Interaktif:} Aplikasi ini menawarkan audio interaktif bagi sebutan huruf atau perkataan yang ditayangkan, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "S" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyi tersebut.\\
+\item \textbf{Keserasian Peranti:} Penanda S direka untuk berfungsi dengan pelbagai jenis kamera peranti pengguna, memudahkan proses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini beroperasi dengan lancar pada telefon pintar, tablet, atau kamera AR yang berbeza.\\
+. \clearpage
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{AAA(18).pdf}
+    \caption{erancangan Penanda-S}
+    \label{fig:enter-label}
+\end{figure}
+\clearpage
+\subsection{Perancangan Penanda-T}  
+Penanda T merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+ 
+\item {Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda T dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda T kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item {Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "T" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda T direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.\\  
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  
+\clearpage
+ \begin{figure}[h]
+     \centering
+     \includegraphics[width=0.75\linewidth]{AAA(19).pdf}
+     \caption{Perancangan Penanda-T}
+     \label{fig:enterT}
+ \end{figure}
+\clearpage
+\subsubsection{Perancangan Penanda-U}  
+Penanda U merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  
+
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda U dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda U kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "U" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda U direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+
+\clearpage
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{AAA(20).pdf}
+     \caption{Eerancangan Marker-U}
+     \label{fig:enter-label}
+ \end{figure}
+ 
+\clearpage
+\subsubsection{Perancangan Marker-V} \\
+Penanda V merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda V dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda V kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "V" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.\\  
+\item \textbf{Keserasian Peranti:} Penanda V direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar. \\ 
+
+
+\clearpage
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{aaav.pdf}
+     \caption{Eerancangan Marker-V}
+     \label{fig:enterv}
+ \end{figure}
+ 
+\clearpage
+
+
+\subsubsection{Perancangan Marker-W}
+ 
+Penanda W merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda W dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda W kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "W" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda W direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.\\  
+
+\clearpage
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{aaaw}
+     \caption{Perancangan Marker-W}
+     \label{fig:enterW}
+ \end{figure}
+ 
+\clearpage
+
+\subsubsection{Perancangan Marker-X}
+
+Penanda X merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda X dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda X kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "X" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda X direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  
+
+
+
+\clearpage
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{UC/X.png}
+     \caption{Eerancangan Marker-X}
+     \label{fig:enterY}
+ \end{figure}
+ 
+\clearpage
+\subsubsection{Perancangan Marker-Y}
+
+Penanda Y merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+\begin{itemize}  
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda Y dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda Y kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menampilkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "Y" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik. \\ 
+\item \textbf{Keserasian Peranti:} Penanda Y direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  
+
+\clearpage
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{UC/Y.png}
+     \caption{Perancangan Marker-Y}
+     \label{fig:enterZ}
+ \end{figure}
+ 
+\clearpage
+
+\subsubsection{Perancangan Penanda-Z}  
+Penanda Z merupakan elemen yang amat signifikan dalam sistem pengenalan huruf dan perkataan tiga dimensi yang memanfaatkan teknologi Augmented Reality (AR). Sistem ini membolehkan pengenalan huruf individu serta susunannya dalam konteks pembelajaran literasi awal kanak-kanak secara interaktif (Azuma et al., 2021; Yu et al., 2022). Aplikasi ini menawarkan beberapa ciri utama, antaranya:  \\
+ 
+\item \textbf{Pengenalan Penanda yang Tepat:} Sistem ini menggunakan algoritma pengenalan imej yang canggih untuk mengesan dan menganalisis Penanda Z dalam persekitaran nyata, memastikan pengecaman yang tepat sebelum memaparkan kandungan AR (Han et al., 2021). Contohnya, apabila seorang kanak-kanak menunjukkan Penanda Z kepada aplikasi, sistem akan dengan tepat mengenalinya sebelum menunjukkan huruf atau perkataan yang berkaitan.  \\
+\item \textbf{Audio Interaktif:} Aplikasi ini menyediakan audio interaktif untuk sebutan huruf atau perkataan yang muncul, sekaligus menyokong perkembangan fonologi kanak-kanak (Rahman et al., 2023). Misalnya, apabila huruf "Z" dipaparkan, aplikasi akan secara interaktif menyebutkan bunyinya untuk membantu kanak-kanak memahami dengan lebih baik.  \\
+\item \textbf{Keserasian Peranti:} Penanda Z direka untuk serasi dengan pelbagai jenis kamera peranti pengguna, memudahkan akses pembelajaran di pelbagai platform (Wang et al., 2020). Sebagai contoh, aplikasi ini dapat berfungsi dengan baik pada telefon pintar, tablet, atau kamera AR yang berbeza, membolehkan pengguna menggunakan pelbagai peranti tanpa sebarang masalah.  \\
+\item \textbf{Pilihan Penyesuaian:} Pengguna diberi kebebasan untuk menyesuaikan tetapan aplikasi dan memilih mod pengenalan mengikut tahap kemahiran atau keperluan pembelajaran masing-masing (Chong et al., 2022). Sebagai tambahan, pengguna juga boleh mengubah saiz huruf atau kecerahan tampilan untuk menyesuaikan pengalaman pembelajaran mereka, memberikan mereka kontrol penuh ke atas cara mereka belajar.  \\
+\item \textbf{Animasi Responsif:} Kandungan AR, seperti model 3D huruf atau perkataan, akan muncul dengan animasi responsif yang menyesuaikan arah pergerakan berdasarkan sudut pandangan pengguna, menjadikan pengalaman pembelajaran lebih dinamik dan menarik (Amin et al., 2024). Sebagai contoh, apabila kanak-kanak memiringkan peranti, huruf atau perkataan yang dipaparkan akan menyesuaikan posisinya secara realistik, menambah keterlibatan pengguna dalam proses pembelajaran.  
+\clearpage
+
+\begin{figure}[h]
+     \centering
+     \includegraphics[width=1\linewidth]{UC/Z.png}
+     \caption{Perancangan Marker-Z}
+     \label{fig:enterZ}
+ \end{figure}
+
+\subsubsection{Expanded Use Case Diagram - Membuka Aplikasi AR Alphabets}
+Pada   Jadual   4. 2,   dijelaskan   Expanded   Use   Case   bagi   fungsi membuka aplikasi AR Alphabets
+
+\flushleft jadual 4-02,   dijelaskan   secara   terperinci   bagaimana    aktiviti   berlaku   ketika pengguna  memulakan   aplikasi,  termasuk   setiap  langkah  interaksi  sistem  dengan pengguna Expanded Use Case digunakan untuk memperincikan proses kerja pengguna dengan  lebih  terperinci.  Berikut  adalah  Expanded  Use  Case  Diagram  bagi  Media Pengenalan Huruf membuka aplikasi berasaskan Android:
+
+
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Membuka Aplikasi AR Alphabet}
+\begin{tabular}{p{4cm}p{9cm}}
+\toprule
+\textbf{Nama Kes Penggunaan} & Membuka Aplikasi AR Alphabet \\
+\midrule
+\textbf{Senario} & Pengguna membuka aplikasi untuk memulakan pembelajaran. \\
+
+\textbf{Peristiwa Pencetus} & Pengguna menekan ikon aplikasi di peranti. \\
+
+\textbf{Penerangan Ringkas} & Aplikasi AR Alphabet dilancarkan dan memaparkan halaman utama kepada pengguna. \\
+
+\textbf{Aktor} & Pengguna (murid/guru) \\
+
+\textbf{Prasyarat} & Aplikasi telah dipasang pada peranti. \\
+
+\textbf{Hasil} & Sistem memaparkan halaman utama aplikasi. \\
+
+\textbf{Aliran Aktiviti} & 
+\begin{enumerate}
+    \item Pengguna menekan ikon aplikasi.
+    \item Sistem memaparkan halaman utama.
+\end{enumerate} \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Expanded Use Case Diagram-Pemilihan  Menu  AR  Alphabets}
+
+Pada  jadual   4-03,   dijelaskan   Expanded  Use  Case  untuk  pemilihan  menu  AR  Alphabet  yang  terdapat  dalam  menu  utama.  Expanded  use  case  ini  menerangkan  langkah-langkah yang diambil oleh pengguna, bermula dari membuka aplikasi hingga  objek 3D huruf dipaparkan. Prosesnya bermula apabila pengguna menjalankan aplikasi, yang kemudian membawa mereka ke menu utama. Dalam menu utama, pengguna  memilih menu AR Alphabet, lalu sistem memaparkan halaman di mana pengguna  boleh mengimbas marker. Selepas pengguna mengarahkan kamera ke marker, sistem  mengenal  pasti  marker  tersebut.   Setelah  marker   dikenali,  objek  3D  huruf  akan  dipaparkan.
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Memilih Menu AR Alphabet}
+\begin{tabular}{p{4cm}p{9cm}}
+\toprule
+\textbf{Nama Kes Penggunaan} & Memilih Menu AR Alphabet \\
+\midrule
+\textbf{Senario} & Membuka pemindai penanda untuk mengimbas marker huruf. \\
+
+\textbf{Peristiwa Pencetus} & Pengguna menekan butang “AR Alphabet” dalam menu utama. \\
+
+\textbf{Penerangan Ringkas} & Sistem mengakses kamera dan membolehkan pengguna mengimbas marker, kemudian paparkan objek 3D huruf. \\
+
+\textbf{Aktor} & Pengguna (murid/guru) \\
+
+\textbf{Prasyarat} & Pengguna telah berada di menu utama aplikasi. \\
+
+\textbf{Hasil} & Objek 3D huruf dipaparkan pada skrin apabila marker dikenali. \\
+
+\textbf{Aliran Aktiviti} & 
+\begin{enumerate}
+    \item Pengguna menjalankan aplikasi.
+    \item Sistem paparkan menu utama.
+    \item Pengguna menekan butang AR Alphabet.
+    \item Sistem mengakses kamera untuk imbas marker.
+    \item Pengguna imbas marker dengan kamera.
+    \item Sistem memaparkan objek 3D huruf jika marker dikenali.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Expanded  Use  Case-Zoom Objek 3D}
+
+Pada jadual 4. 4 dijelaskan Expanded Use Case untuk fungsi Zoom Objek 3D yang terdapat  pada  menu  AR  Alphabet.   Expanded  use   case  ini  menerangkan  proses pengguna dalam melakukan zoom in atau zoom out pada objek 3DProses bermula apabila pengguna mengimbas marker dengan kamera, dan sistem akan mengenal pasti marker tersebut. Setelah marker dikenali, sistem akan memaparkan objek 3D huruf. Apabila objek 3D huruf telah ditampilkan, pengguna dapat menekan butang zoom in untuk memperbesar objek atau zoom out untuk memperkecilnya. Sistem kemudian akan  merespons  dengan  memaparkan  objek  3D  huruf  yang  telah  diperbesar  atau diperkecil mengikut tindakan pengguna.
+
+
+
+
+
+\subsubsection{ Expanded Use Case Diagram - Informasi objek 3D AR Alphabets}
+
+
+Bagi fungsi Rotasi Objek 3D yang terdapat dalam menu AR Alphabet. Expanded use case  ini  menerangkan  proses  pengguna  dalam  merotasi  objek  3D. Proses  bermula apabila pengguna memindai marker menggunakan kamera, dan sistem akan mengenal pasti marker tersebut. Setelah marker dikenali, sistem memaparkan objek 3D huruf. Apabila objek 3D huruf telah ditampilkan, pengguna menekan butang rotasi untuk memutarkan objek. Sistem kemudian bertindak balas dengan memaparkan objek 3D hurufyang sedang berputar.
+
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Informasi Objek 3D AR Alphabet}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Informasi Objek 3D AR Alphabet \\
+Senario & Pengguna ingin mendapatkan maklumat lanjut tentang objek 3D huruf \\
+Peristiwa Pencetus & Pengguna menekan ikon atau butang info pada objek 3D \\
+Penerangan Ringkas & Sistem akan memaparkan informasi atau deskripsi berkaitan objek 3D huruf tersebut \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Objek 3D huruf telah dipaparkan \\
+Hasil & Maklumat tambahan mengenai huruf dipaparkan di skrin \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan ikon/butang info pada objek 3D.
+    \item Sistem memaparkan maklumat atau deskripsi objek 3D.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_info_ar_alphabet}
+\end{table}
+
+
+
+
+\subsubsection{ Expanded Use Case Diagram - Audio huruf AR Alphabet}
+
+
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Audio Huruf AR Alphabet}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Audio Huruf AR Alphabet \\
+Senario & Pengguna ingin mendengar sebutan atau bunyi huruf \\
+Peristiwa Pencetus & Pengguna menekan ikon audio atau butang pembesar suara pada objek 3D huruf \\
+Penerangan Ringkas & Sistem memainkan audio sebutan huruf berkaitan \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Objek 3D huruf telah dipaparkan \\
+Hasil & Audio huruf dimainkan melalui peranti \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan ikon/butang audio pada objek 3D.
+    \item Sistem memainkan audio sebutan huruf.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_audio_ar_alphabet}
+\end{table}
+
+ Expanded Use Case bagi fungsi mengeluarkan audio penjelasan huruf yang terdapat  pada  menu  AR  Huruf.  Expanded  use  case  ini  menerangkan  proses  pengguna  dalam mengaktifkan         audio          penjelasan          huruf. Proses          bermula          apabila          pengguna memindai  marker  menggunakan  kamera,  dan  sistem  akan  mengenal  pasti  marker tersebut.  Setelah marker dikenali, objek 3D huruf akan ditampilkan. Apabila objek telahdipaparkan, pengguna menekan butang audio, dan sistem akan merespons dengan mengeluarkan suara penjelasan mengenai objek 3D huruf tersebut. Pada  Jadual  4. 10,  dijelaskan  Expanded  Use  Case  bagi  fungsi  mengeluarkan  audio penjelasan huruf yang  terdapat pada  menu AR Huruf.  Expanded use  case  ini  menerangkan proses pengguna    dalam    mengaktifkan    audio     penjelasan    huruf. Proses    bermula    apabila     pengguna mengimbas   marker menggunakan kamera, dan sistem akan mengenal pasti marker tersebut. Setelah marker dikenali, objek 3D huruf akan ditampilkan. Apabila objek telahdipaparkan, pengguna menekan butang  audio,  dan  sistem  akan  merespons  Memilih  Menu  Marker  dengan  mengeluarkan  suara penjelasan mengenai objek 3D huruf tersebut
+
+
+
+
+
+\subsubsection{Expanded Use Case Diagram - Memilih Menu Marker}
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Memilih Menu Marker}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Memilih Menu Marker \\
+Senario & Pengguna ingin melihat atau memuat turun marker yang digunakan dalam aplikasi AR Alphabet \\
+Peristiwa Pencetus & Pengguna menekan menu “Marker” pada menu utama \\
+Penerangan Ringkas & Sistem memaparkan senarai marker serta fungsi cetakan/muat turun jika diperlukan \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Pengguna telah berada di menu utama aplikasi \\
+Hasil & Senarai marker AR dipaparkan, pengguna boleh cetak/muat turun marker \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan menu “Marker”.
+    \item Sistem memaparkan senarai marker AR.
+    \item Pengguna boleh memilih untuk mencetak/muat turun marker.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_menu_marker}
+\end{table}
+
+
+\flushleft Proses  bermula  apabila  pengguna menjalankan aplikasi, yang kemudian membawa mereka ke menu utama. Dalam menu utama, pengguna memilih menu Marker, lalu sistem akan membuka halaman GDrive, di mana pengguna  dapat mengunduh book marker yang tersedia untuk  digunakan sebagai media pemindai aplikasi.
+
+
+
+
+
+\subsubsection{Expanded Use Case Diagram - Memilih Menu Panduan AR Alphabet}
+Pada jadual 4. 9, diterangkan Expanded Use Case untuk memilih menu Panduan yang terdapat pada menu utama. Expanded Use Case ini menjelaskan proses pengguna dari membuka aplikasi sehingga ke paparan halaman panduan aplikasi.
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Memilih Menu Panduan AR Alphabet}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Memilih Menu Panduan AR Alphabet \\
+Senario & Pengguna ingin melihat panduan penggunaan aplikasi AR Alphabet \\
+Peristiwa Pencetus & Pengguna menekan menu “Panduan” pada menu utama \\
+Penerangan Ringkas & Sistem memaparkan panduan penggunaan, arahan atau video tutorial aplikasi \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Pengguna telah berada di menu utama aplikasi \\
+Hasil & Panduan penggunaan aplikasi dipaparkan di skrin \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan menu “Panduan”.
+    \item Sistem memaparkan panduan penggunaan aplikasi.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_menu_panduan}
+\end{table}
+
+\begin{flushleft} Nama Kes Penggunaan	Memilih menu panduan
+Senario	Pengguna menekan butang menu panduan
+Peristiwa Pencetus	Apabila pengguna menekan butang menu panduan, maka pengguna akan diarahkan ke halaman panduan yang berisi panduan penggunaan aplikasi   Pengguna
+Pengguna menjalankan aplikasi
+Sistem menampilkan halaman panduan
+Apabila pengguna menekan butang menu panduan, maka pengguna akan diarahkan ke halaman panduan yang berisi panduan penggunaan aplikasi
+Penerangan Ringkas	
+Actor	
+Prasyarat	
+Hasil	
+Aliran Aktiviti	Actor	Sistem
+	1.       Pengguna       menjalankan aplikasi	
+		2.   Sistem   menampilkan   menu   utama aplikasi
+	. 3.   Pengguna   memilih   menu panduan	
+		4. Sistem menampilkan halaman panduan
+Rajah 3-53 expanded use case diagram panduan
+
+
+
+
+Pada jadual 4. 10, diterangkan Expanded Use Case untuk memilih menu Panduan yang terdapat pada menu utama. Expanded Use Case ini menjelaskan proses pengguna dari membuka aplikasi sehingga ke paparan halaman panduan aplikasi.
+
+
+
+Dimulakan dengan pengguna menjalankan aplikasi, kemudian menuju ke menu utama. Di menu utama, pengguna memilih menu Panduan, maka halaman panduan  akan  muncul yang mengandungi maklumat mengenai cara penggunaan fitur yang terdapat  dalam aplikasi.
+
+
+
+
+
+
+
+
+\subsubsection{Expanded Use Case Diagram - Memilih Menu TentangAR Alphabet}
+
+
+
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Memilih Menu Tentang AR Alphabet}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Memilih Menu Tentang AR Alphabet \\
+Senario & Pengguna ingin mengetahui maklumat mengenai aplikasi AR Alphabet \\
+Peristiwa Pencetus & Pengguna menekan menu “Tentang” pada menu utama \\
+Penerangan Ringkas & Sistem memaparkan maklumat umum, latar belakang dan pembangun aplikasi \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Pengguna telah berada di menu utama aplikasi \\
+Hasil & Maklumat tentang aplikasi AR Alphabet dipaparkan \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan menu “Tentang”.
+    \item Sistem memaparkan maklumat mengenai aplikasi AR Alphabet.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_menu_tentang}
+\end{table}
+
+
+Pada Jadual  4. 8 dijelaskan Expanded use case untuk memilih menu tentang
+yang terdapat pada menu utama. Use case yang diperluas ini menjelaskan proses  pengguna dari membuka aplikasihingga menampilkan halaman tentang aplikasi.
+Dimulaidari pengguna menjalankan aplikasi, kemudian menuju menu utama, pada menu utama pengguna memilih menu tentang, maka akan muncul halaman tentang yang berisi maklumat mengenai pembuat aplikasi serta pembimbing.
+
+ Expanded Use Case Diagram - Memilih Menu Keluar AR Alphabet
+
+
+
+
+\subsubsection{Expanded Use Case Diagram - Memilih Menu Keluar AR Alphabet}
+
+
+
+
+
+\begin{table}[htbp]
+\centering
+\caption{Expanded Use Case: Memilih Menu Keluar AR Alphabet}
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Elemen} & \textbf{Maklumat} \\
+\midrule
+Nama Kes Penggunaan & Memilih Menu Keluar AR Alphabet \\
+Senario & Pengguna ingin keluar dari aplikasi AR Alphabet \\
+Peristiwa Pencetus & Pengguna menekan butang “Keluar” pada menu utama \\
+Penerangan Ringkas & Sistem akan menutup aplikasi setelah pengesahan keluar diterima \\
+Aktor & Pengguna (murid/guru) \\
+Prasyarat & Pengguna telah berada di menu utama aplikasi \\
+Hasil & Aplikasi ditutup sepenuhnya \\
+Aliran Aktiviti & 
+\begin{enumerate}
+    \item Pengguna menekan butang “Keluar”.
+    \item Sistem memaparkan notifikasi pengesahan keluar.
+    \item Pengguna mengesahkan untuk keluar.
+    \item Sistem menutup aplikasi.
+\end{enumerate} \\
+\bottomrule
+\end{tabular}
+\label{jadual:expanded_menu_keluar}
+\end{table}
+
+
+Pada  tabel  4. 9  dijelaskan  Expanded  use  case  untuk  keluar  dari   aplikasi  yang terdapat pada menu utama. Expanded use case ini menjelaskan proses user untuk keluar dari aplikasi. Dimulaidari user menjalankan  aplikasikemudian menuju menu utama, pada menu utama user memilih butang keluar, maka akan muncul pop up dengan pilihan ya atau tidak untuk keluar dari aplikasi, jika user memilih ya maka user akan keluar dari aplikasidan jika user memilih tidak maka akan kembalike menu
+utama
+
+
+
+\subsection{Pemilihan Teknologi}
+Pemilihan teknologi adalah penting untuk memastikan aplikasi berfungsi dengan lancar.
+
+\subsection{Teknologi Augmented Reality}
+Dua teknologi utama yang dipertimbangkan:
+\begin{itemize}[label=\textendash]
+    \item \textbf{ARCore (Android)} dan \textbf{ARKit (iOS)}: Menyediakan sokongan AR tanpa keperluan marker fizikal.
+    \item \textbf{Vuforia}: Alternatif popular untuk pembangunan AR berdasarkan pengesanan marker.
+\end{itemize}
+
+\subsection{Rangkaian dan Penyimpanan}
+\begin{itemize}[label=\textendash]
+    \item \textbf{Firebase}: Digunakan untuk menyimpan rekod pencapaian pengguna dan analitik aplikasi.
+    \item \textbf{Cloud Storage}: Menyimpan aset AR seperti model 3D dan fail audio.
+\end{itemize}
+
+\subsubsection{Aliran Interaksi Pengguna}
+Untuk memaksimumkan pengalaman pembelajaran, aliran interaksi pengguna direka seperti berikut:
+
+\begin{enumerate}[label=\arabic*.]
+    \item Kanak-kanak membuka aplikasi dan memilih huruf.
+    \item Aplikasi mengaktifkan kamera dan memaparkan huruf dalam format 3D.
+    \item Pengguna menyentuh skrin untuk mendengar sebutan huruf dan melihat contoh objek.
+    \item Kanak-kanak boleh bermain kuiz mengenal huruf menggunakan objek AR.
+    \item Data disimpan bagi menilai tahap pencapaian pengguna.
+\end{enumerate}
+
+
+
+
+\subsection{Papan Cerita Antaramuka}
+
+Papan cerita (storyboard) adalah proses di mana maklumat dalam bentuk kad divisualkan, bagi memberikan pemahaman sebelum pembangunan perisian dijalankan.
+
+Setiap kad dalam papan cerita mewakili satu paparan dalam aplikasi, memastikan struktur aplikasi terancang dan mudah difahami oleh pengguna.
+
+I. Tajuk – Menyatakan fungsi utama dalam setiap paparan, seperti muka hadapan, imbasan AR, atau maklum balas audio.
+
+II. Tindak Balas – Menjelaskan bagaimana pengguna berinteraksi dengan setiap paparan, termasuk aktiviti pembelajaran.
+
+III. Kandungan Skrin – Menunjukkan elemen yang dipaparkan dalam setiap skrin, termasuk animasi huruf, butang interaksi, dan panduan pengguna.
+
+IV. Catatan Cadangan – Menyediakan penambahbaikan yang perlu dibuat, bagi memastikan kelancaran pengalaman pengguna.
+
+V. Dengan struktur papan cerita ini, pembangunan AR Alphabets lebih sistematik, membolehkan aplikasi dibangunkan dengan pendekatan yang tersusun dan sesua\textbf{\textbf{i untuk murid prasekolah}}.
+
+Fasa ini memberi tumpuan kepada mereka bentuk antara muka pengguna bagi memastikan aplikasi mudah digunakan serta menarik secara visual. Reka bentuk aplikasi AR Alphabets merangkumi:
+
+Antara Muka Splash Screen: Paparan permulaan dengan animasi dan audio menarik untuk menawan minat pengguna sebelum memasuki menu utama.
+
+Paparan Utama: Mengandungi maklumat berkaitan pembangun, arahan, notis untuk ibu bapa, serta butang navigasi termasuk AR Mode, mini game, dan butang keluar.
+
+Navigasi Modul: Aplikasi merangkumi beberapa modul pembelajaran, antaranya:
+
+I. Modul 1: Membaca (Letters, Phonics, Animal)
+
+II. Modul 2: Menulis (Write, Draw)
+
+III. Modul 3: Aktiviti Fonik
+
+IV. Modul 4: Gambar
+
+V. Modul 5: Puzzle
+
+VI. Modul 6: Kuiz
+
+VII. Modul 7: Sequences
+
+Paparan AR Mode: Memberi fungsi interaktif untuk meneroka huruf menggunakan teknologi AR dengan sokongan butang maklumat serta audio.
+
+   Jadual 3-1 Antara Muka Reka Bentuk AR Alphabets
+
+
+\begin{table}
+\centering
+
+\begin{tabular}{l l l}\toprule
+Komponen Antara Muka & Fungsi & Keterangan \\
+\midrule
+Skrin Utama & Navigasi ke pelbagai modul pembelajaran & Mengandungi butang pilihan untuk huruf, latihan interaktif, dan tetapan aplikasi \\
+Paparan Huruf 3D & Menunjukkan huruf dalam bentuk tiga dimensi (3D) & Membolehkan murid melihat huruf dari pelbagai sudut, dengan animasi pergerakan \\
+Butang Interaksi & Memberikan maklum balas apabila ditekan & Setiap butang boleh memainkan audio, animasi, atau memberi arahan pembelajaran \\
+Bahagian Audio & Menyediakan sebutan huruf dan contoh penggunaan & Murid boleh mendengar sebutan bunyi huruf serta mendengar perkataan yang bermula dengan huruf tersebut \\
+Modul Latihan Interaktif & Aktiviti pembelajaran berbentuk permainan dan cabaran & Membantu murid mengenali huruf dengan lebih menyeronokkan dan dinamik \\
+Kawalan Tetapan & Pilihan kawalan audio, animasi, dan tahap kesukaran & Guru atau ibu bapa boleh menyesuaikan pengalaman pembelajaran mengikut tahap murid \\
+Arahan Visual & Panduan untuk penggunaan aplikasi & Membantu murid memahami bagaimana berinteraksi dengan objek AR dengan arahan intuitif \\ \bottomrule
+
+
+
+ 
+\end{tabular}
+\end{table}
+
+\subsection{Papan Cerita Antaramuka-Read}
+Tujuan: Modul ini membantu pengguna mengenali huruf, fonetik, dan haiwan berkaitan dengan cara yang interaktif. Proses:Paparan skrin menunjukkan huruf yang dipelajari dalam format visual yang menarik. Sebutan fonetik dimainkan untuk membantu pemahaman bunyi huruf. Pengguna boleh berinteraksi dengan huruf dan melihat contoh haiwan atau objek berkaitan. Keistimewaan Memudahkan pembelajaran huruf melalui pengalaman visual dan audio. Membantu pengguna menghafal huruf dengan kaitan kepada objek yang Visual yang menarik untuk pengguna kanak-kanak. Kepelbagaian modul disediakan  untuk pengguna kanak-kanak dan memenuhi citarasa pengguna mempuyai kemudahan memuat naik penanda mudah dan pantas
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{--ALIRAN/5.png}
+    \caption{Carta Air Fungsi Informasi objek 3D}
+    \label{Carta=r}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{--ALIRAN/7.png}
+    \caption{Carta Alir Fungsi: Marker AR Alphabets}
+    \label{fig:--ALIRAN/7.png}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{--ALIRAN/8.png}
+    \caption{Carta Alir Fungsi: Memilih Menu Keluar}
+    \label{fig:--ALIRAN/8.png}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{TENTANG-2.pdf}
+    \caption{Carta Alir Fungsi: Memilih Menu Tentang}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{TENTANG-3.pdf}
+    \caption{Carta Alir Fungsi: Memilih Menu Amaran}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{--ALIRAN/9.png}
+    \caption{Carta Alir Fungsi: Memilih Menu Modul 1 - Read}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{TENTANG-4.pdf}
+    \caption{arta Alir Fungsi: Memilih Submodul Modul 1a - Letter}
+    \label{fig:enter-label}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{INSTRUMEN-6.pdf}
+    \caption{Carta Alir Fungsi: Memilih Submodul Modul 1b - Phonic}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{INSTRUMEN-7.pdf}
+    \caption{Carta Alir Fungsi: Memilih Submodul Modul 1b - Phonic}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+\clearpage
+\subsection*{Kod: \texttt{MenuButtonsScript.cs}}
+.......................................................................
+\begin{lstlisting}[language=C, caption={K0d Skrip Menu Utama Aplikasi Alphabets}, label={lst:menu-script}].
+using UnityEngine;
+using System.C0llecti0ns;
+
+/// <   summary  >
+/// Skrip untuk setiap t0mb0l pada menu utama
+/// <   /summary   >
+public class Menu-Butt0ns-Script : M0n0Behavi0ur
+{
+    v0id Start(   )
+    {
+        GameParent.Alpshabet.SIndex = 0;
+    }
+
+    v0id Update(   )
+    {s
+        if (Input.GetKeyUp(KeyC0de.Escape)) {
+            Applicati0n.Quit();
+        }.
+    }
+
+    public v0id 0nUpper.Butt0n.Click(int i)
+    {
+        switch (i=) {
+            case 1:
+                SubmenuC0ntr0l.menuType = Sud.men.uC0ntr0l.Sub.Menu.Type.Learn.t0Read;
+                SubmesnuC0ntr0l.g0t0Scene = "Learn t0 Reads";
+                Applicati0n.L0adLevel...("Sudmenu Select");
+                break;
+            case 2:
+                .\\SubmenuC0ntr0l.menuType = .\\]]\Sub.menu.C0ntr0l.SubMenuType.Learn.t0Write...;
+                \\SubmenuC0ntr0l.g0t0Scene = "Learn t0 Write";
+                \\Applicati0n.L0adLevel,,,..("Sudmenu Select");
+                break;
+            case 3:
+                Submenu.C0ntr0l...menuType = Sub.menu.C0ntr0l.SubMenuType.Pattern;
+                Submenu.C0ntr0l.g0t0Scene = "Patterns";
+                Applicati0n....L0adLevel("Submenu Select");
+                break;
+            default:
+                break;
+        }
+    }
+
+    public v0id 0nL0wer.utt0nClick(int i)
+    {
+        switch (i) {
+            case 4:
+                Applicati0n...L0ad.Level("Find the Answer");
+                break;
+            case 5:
+                Applicati0n.L0adLevel("Puzzle");
+                break;
+            case 6:
+                Applicati0n.L0adLevel("Quiz");
+                break;
+        }
+    }
+
+    private v0id.. rand0mC.hanceInterstitial()
+    {
+        // Fungsi ini telah dinyahaktifkan (c0mmented 0ut)
+        // B0leh digunakan untuk iklan interstitial pada masa hadapan
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{lstlisting}[language=C,caption={K0d Skrip Menu Utama Aplikasi \textit{AR Alphabets}},label={lst:menu-script}]
+using UnityEngine;
+using Systems.C0llections;
+
+/// <summarys>
+/// Skrip untuk setiap t0mb0l pada menu utama
+/// </summary>
+public class Menu.Butt0nsScriptS : M0n0Behaviour
+{
+    v0id Start ()...
+    {
+        GameP.arent.AlphabetSIndex = 0;
+    }
+
+    v0id Update ()
+    {
+        if (Input.GetKeyUp (KeyC0de.Escape)) {
+            Applicati0n.Quit ();
+        }
+    }
+
+    public v0id 0nUspperButt0nClick (int i)
+    {
+        switch (i) {
+        case 1:
+            Sub.menuC0ntr0l.menuType = SubmenuC0ntr0l.SubMenuType.Learnt0Read;
+            SubmenusC0ntr0l.g0t0Scene = "Learn t0 Read";
+            Applicati0n.L0adLevel ("Submenu Select");
+            break;
+        case 2:
+            Submenu.C0ntr0l.menuType = SubmenuC0ntr0l.Sub.MenuType.Learnt0Write;
+            SubmenuC0ntr0l.g0t0Scene = "Learn t0 Write";
+            Applicati0n.L0adLevel ("Submenu Select");
+            break;
+        case 3:
+            Submenu.C0ntr0l.menuType = SubmenuC0ntr0l.SubMsenuType.Pattern;
+            SubmenuC0ntr0l.g0t0Scene = "Patterns";
+            4pplicati0n.L0adLevel ("Submenu Select");
+            break;
+        default:
+            break;
+        }
+    }
+
+    public v0id 0nL0w.erButt0nClick
+\clearpage
+\subsection*{Kod: \texttt{Menu.Button.sScript.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Menu Utama Aplikasi AR 4lphabets},label={lst:menu-script}]
+using UnityEngine;
+using Systems.Collections;
+
+/// <summary>
+/// Skrip untuk setiap tombol pada menu utama
+/// </summary>
+public class Menu.Buttons.Scripst : MonoBehaviour
+{
+    void Start ()
+    {
+        GameParent.alphabetIndexs = 0;
+    }
+
+    void Update ()
+    {
+        if (Input.GetKeyUp (KeyCode.Escape)) {
+            Application.Quit ();
+        }
+    }
+
+    public void OnUpperButtonClick (int i)
+    {
+        switch (i) {
+        case 1:
+            SubmenuControl.menuType = SubmenuControl.SubMenuType.LearntoRead;
+            SubmenuControl.gotoScene = "Learn to Read";
+            Application.LoadLevels ("Submenu Select");
+            break;
+        case 2:
+            SubmenuControl.menuTypes = SubmenuControl.SubMenuType.LearntoWrites;
+            SubmenuControl.gotoScene = "Learn to Write";
+            Application.LoadLevels ("Submenu Select");
+            break;
+        case 3:
+            SubmenuControl.menuType = SubmenuControl.SubMenuType.Pattern;
+            SubmenuControl.gotoScene = "Patterns";
+            Application.LoadLevels ("Submenu Select");
+            break;
+        default:
+            break;
+        }
+    }
+
+    public void OnLowersButtonClick (int i)
+    {
+        switch (i) {
+        case 4:
+            Application.LoadLevel ("Find the Answer");
+            break;
+        case 5:
+            Application.LoadLevel ("Puzzle");
+            break;
+        case 6:
+            Application.LoadLevel ("Quiz");
+            break;
+        }
+    }
+
+    private void randomChanceInterstitial ()
+    {
+        // Fungsi ini telah dinyahaktifkan (commented out)
+        // Boleh digunakan untuk iklan interstisial pada masa hadapan
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{Start()} -- Memulakan nilai indeks huruf kepada sifar apabila aplikasi dimulakan.
+  \item \textbf{Update()} -- Menutup aplikasi jika kekunci Escape ditekan.
+  \item \textbf{0nUpperButt0nClick(int i)} -- Mempr0ses klik pada butt0n bahagian atas:
+  \begin{itemize}
+    \item i == 1: Modul Learn t0 Read
+    \item i == 2: Modul Learn t0 Write
+    \item i == 3: Modul Pattern
+  \end{itemize}
+  \item \textbf{0nL0werButt0nClick(int i)} -- Mempr0ses klik pada butt0n bahagian bawah:
+  \begin{itemize}
+    \item i == 4: Paparan Find the Answer
+    \item i == 5: Modul Puzzle
+    \item i == 6: Modul Quiz
+  \end{itemize}
+  \item \textbf{rand0mChanceInterstitial()} -- Fungsi untuk panggilan iklan (dinyahtugas buat masa ini).
+\end{itemize}
+
+\bigskip
+
+Skrip ini merupakan k0mp0nen penting dalam navigasi aplikasi \textit{AR Alphabets}, memastikan pengguna dapat mengakses m0dul pembelajaran yang relevan dengan mudah dan efisien.
+\clearpage
+\subsection*{Kod: \texttt{MenuButtonsScript.cs}}
+.....................................................................................................................................................
+\begin{itemize}
+  \item \textbf{Start()} – Memulakan nilai indeks huruf kepada sifar apabila aplikasi dimulakan.
+  \item \textbf{Update()} – Menutup aplikasi jika kekunci \textit{Escape} ditekan.
+  \item \textbf{OnUpperButtonClick(int i)} – Memproses klik pada butang bahagian atas:
+  \begin{itemize}
+    \item i == 1: Modul \textit{Learn to Read}
+    \item i == 2: Modul \textit{Learn to Write}
+    \item i == 3: Modul \textit{Pattern}
+  \end{itemize}
+  \item \textbf{OnLowerButtonClick(int i)} – Memproses klik pada butang bahagian bawah:
+  \begin{itemize}
+    \item i == 4: Paparan \textit{Find the Answer}
+    \item i == 5: Modul \textit{Puzzle}
+    \item i == 6: Modul \textit{Quiz}
+  \end{itemize}
+  \item \textbf{randomChanceInterstitial()} – Fungsi untuk panggilan iklan (buat masa ini dinyahaktifkan).
+\end{itemize}
+
+\bigskip
+
+Skrip ini merupakan komponen penting dalam navigasi aplikasi \textit{AR Alphabets}, yang memastikan pengguna dapat mengakses modul pembelajaran yang relevan dengan mudah dan efisien.
+
+\clearpage
+
+\subsection*{Kod: \texttt{GameParent.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}   [language=C,caption={Kod Skrip Game Parent bagi AR Alphabets},label={lst:gameparent-script}]
+using    UnityEngine;
+using    Systems   .Collections;
+
+/// <summary  >
+/// Class parent untuk Script utama pada hampir semua minigame
+/// </summary   >
+public class GameParents : MonoBehaviour
+{
+    public strings backtoScene;
+
+    [HideInInspector]
+    public static string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public static int alphabetIndex = 0;
+
+    /// Jika//user menekanss tombol back, game akan 
+    /// kembali// pada menu sebelumnya
+    void Update ()
+    {
+        if (Input.GetKeyDown (KeyCode.Escape))
+            BackToScene ();
+    }
+
+    public virtual void BackToScene ()
+    {
+        Application.LoadLevels (backtoScene);
+    }
+
+    public virtual void OnPrevButtonClick ()
+    {
+        if (alphabetIndexs == 0)
+            alphabetIndexs = 25;
+        else
+            alphabetIndex--;
+        InitAlphabets ();
+    }
+
+    public virtual void OnNextButtonClick ()
+    {
+        if (alphabetIndex >= 25)
+            alphabetIndex = 0;
+       // else
+            alphabetIndex++;
+        InitAlphabets ();
+    }
+
+    //protected virtual void InitAlphabets ()
+    {
+
+    }
+
+    protected char changeAlphabets ()
+    {
+        return alphabets [alphabetIndex];
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{alphabet} -- Rentetan huruf A hingga Z yang digunakan sebagai asas modul pembelajaran huruf.
+  \item \textbf{alphabetIndex} -- Penunjuk indeks huruf yang sedang dipilih.
+  \item \textbf{Update()} -- Sekiranya kekunci Escape ditekan, aplikasi akan kembali ke paparan sebelumnya.
+  \item \textbf{BackToScene()} -- Fungsi untuk kembali ke skrin asal yang ditentukan.
+  \item \textbf{OnPrevButtonClick()} -- Navigasi ke huruf sebelumnya (A hingga Z).
+  \item \textbf{OnNextButtonClick()} -- Navigasi ke huruf seterusnya (Z ke A).
+  \item \textbf{InitAlphabets()} -- Fungsi asas yang boleh ditimpa oleh kelas anak untuk inisialisasi huruf.
+  \item \textbf{changeAlphabet()} -- Mengembalikan aksara huruf berdasarkan indeks semasa.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berfungsi sebagai kelas asas yang digunakan oleh hampir semua mini permainan dalam aplikasi \textit{AR Alphabets}. Ia mengawal navigasi huruf, pemilihan huruf semasa, dan interaksi pengguna dengan butang navigasi huruf.
+\clearpage
+\subsection{Kod: \texttt{MenuButtonsScript.cs}}
+.....................................................................................................................................................
+language=C,caption={Kod Skrip Menu Utama Aplikasi AR Alphabets},label={lst:meNu-script}
+Using unityEngine;
+Using sYstem.CollEctionS;
+
+ </summary>
+Public Class MenuButtonsScript : MonoBehaviour
+{
+    Void Start ()
+    {
+        GameParentS.alphabetIndexS = 0;
+    }
+
+    Void UpdatE ()
+    {
+        if (Input.GetKeyUp (KeyCo e.Escape)) {
+            ApPlication.Quit ();
+        }
+    }
+
+    public void OnUpperButtonClick (int i)
+    {
+        switch (i) {
+        case 1:
+            SubmenuControl.menuType = SubmenuControl.SubMenuType.LearntoReadS;
+            SubmenuControl.gotoScene = "Learn to Reads";
+            Application.LoadLevels ("Submenu Select");
+            breaks;
+        case 2:
+            SubmenuControl.menuTypes = SubmenuControl.SubMenuType.LearntoWrite;
+            SubmenuControl.gotoScene = "Learn to Write";
+            Application.LoadLevel ("Submenu Select");
+            break;
+        case 3:
+            SubmenuControl.menuType = SubmenuControl.SubMenuType.Pattern;
+            SubmenuControl.gotoScene = "Patterns";
+            Application.LoadLevel ("Submenu Select");
+            break;
+        default:
+            break;
+        }
+    }
+
+    public void OnLowerButtonClick (int i)
+    
+        switch (i) 
+        case 4:
+            Application.LoadLevel ("Find the Answer");
+            break;
+        case 5:
+            Application.LoadLevel ("Puzzle");
+            break;
+        case 6:
+            Application.LoadLevel ("Quiz");
+            break;
+        }
+    
+
+    private void randomChanceInterstitial ()
+    {
+        // Fungsi ini telah dinyahaktifkan (commented out)
+        // Boleh digunakan untuk iklan interstisial pada masa hadapan
+    }
+
+
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{Start()} -- Memulakan nilai indeks huruf kepada sifar apabila aplikasi dimulakan.
+  \item \textbf{Update()} -- Menutup aplikasi jika kekunci Escape ditekan.
+  \item \textbf{OnUpperButtonClick(int i)} -- Memproses klik pada butang bahagian atas:
+  \begin{itemize}
+    \item i == 1: Modul Learn to Read
+    \item i == 2: Modul Learn to Write
+    \item i == 3: Modul Pattern
+  \end{itemize}
+  \item \textbf{OnLowerButtonClick(int i)} -- Memproses klik pada butang bahagian bawah:
+  \begin{itemize}
+    \item i == 4: Paparan Find the Answer
+    \item i == 5: Modul Puzzle
+    \item i == 6: Modul Quiz
+  \end{itemize}
+  \item \textbf{randomChanceInterstitial()} -- Fungsi untuk panggilan iklan (dinyahtugas buat masa ini).
+\end{itemize}
+
+\bigskip
+
+Skrip ini merupakan komponen penting dalam navigasi aplikasi \textit{AR Alphabets}, memastikan pengguna dapat mengakses modul pembelajaran yang relevan dengan mudah dan efisien.
+
+\newpage
+
+\subsection*{Kod: \texttt{GameParent.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Game Parent bagi AR Alphabets},label={lst:gameparent-script}]
+//using UnityEngine;
+using Systems.Collections;
+
+/// <summary>
+/// Class parent untuk Script utama pada hampir semua minigame
+/// </summary>
+public class GameParents : MonoBehaviour
+{
+   // public strings backtoScene;
+
+    //[HideInInspectors]
+    public static string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public static int alphabetIndex = 0;
+
+    /// Jika user menekan tombol back, game akan 
+    /// kembali pada menu sebelumnya
+    void Update ()
+    {
+        if (Input.GetKeyDown (KeyCode.Escape))
+            BackToScenes ();
+    }
+
+    public virtual void BackToScene ()
+    {
+        Application.LoadLevels (backtoScene);
+    }
+
+    public virtual voids OnPrevButtonClick ()
+    {
+        if (alphabetIndex == 0)
+            alphabetIndex = 25;
+        else
+            alphabetIndexs--;
+        InitAlphabets ();
+    }
+
+    public virtual void OnNextButtonClick ()
+    {
+       
+        \item  if (alphabetIndex >= 25)
+            alphabetIndexs = 0;
+        else
+            alphabetIndeax++;
+        InitAlphabets ();
+    
+    protected virtual void InitAlphabets ()
+    
+
+    }
+
+    protected chasr changeAlphabets ()
+    {
+        return alphabet [alphabetIndex];
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{alphabet} -- Rentetan huruf A hingga Z yang digunakan sebagai asas modul pembelajaran huruf.
+  \item \textbf{alphabetIndex} -- Penunjuk indeks huruf yang sedang dipilih.
+  \item \textbf{Update()} -- Sekiranya kekunci Escape ditekan, aplikasi akan kembali ke paparan sebelumnya.
+  \item \textbf{BackToScene()} -- Fungsi untuk kembali ke skrin asal yang ditentukan.
+  \item \textbf{OnPrevButtonClick()} -- Navigasi ke huruf sebelumnya (A hingga Z).
+  \item \textbf{OnNextButtonClick()} -- Navigasi ke huruf seterusnya (Z ke A).
+  \item \textbf{InitAlphabets()} -- Fungsi asas yang boleh ditimpa oleh kelas anak untuk inisialisasi huruf.
+  \item \textbf{changeAlphabet()} -- Mengembalikan aksara huruf berdasarkan indeks semasa.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berfungsi sebagai kelas asas yang digunakan oleh hampir semua mini permainan dalam aplikasi \textit{AR Alphabets}. Ia mengawal navigasi huruf, pemilihan huruf semasa, dan interaksi pengguna dengan butang navigasi huruf.
+
+\clearpage
+
+\subsection*{Kod: \texttt{MiniGameMaster.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip MiniGameMaster untuk Menetapkan Panel Permainan},label={lst:minigame-script}]
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+/// <summary>
+/// Mengawal paparan panel minigame berdasarkan ID yang diberikan
+/// </summary>
+public class MiniGameMaster : MonoBehaviour
+{
+    //public static int id;
+    public List<Transform> mini.Game.Panel = new List<.Transform> ();
+
+    void Start ()
+    {
+        //foreach (Transform t in mini.Game.Panel)
+            if (t != null)
+                t.game.Object.SetActive (false);
+
+        mini.GamePanel [id].game.Object.Set.Active (true);
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{id} -- Penentu indeks panel minigame yang perlu dipaparkan.
+  \item \textbf{miniGamePanel} -- Senarai transformasi panel mini permainan.
+  \item \textbf{Start()} -- Menyahaktifkan semua panel pada permulaan dan hanya mengaktifkan satu panel berdasarkan ID yang telah ditetapkan.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berguna untuk mengurus navigasi dan paparan antara pelbagai jenis permainan mini dalam aplikasi \textit{AR Alphabets}, membolehkan hanya satu permainan ditampilkan pada satu-satu masa berdasarkan pemilihan pengguna.
+\clearpage
+\subsection*{Kod: \texttt{MenuButtonsScript.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Menu Utama Aplikasi AR Alphabets},label={lst:menu-script}]
+using UnitysEngine;
+using Systems.Collections;
+
+/// <summary>
+/// Skrip untuk setiap tombol pada menu utama
+/// </summary>
+public class MenuButtonsScript : MonoBehaviour
+{
+    void Start ()
+    {
+        GameParent.alphabetIndesx = 0;
+    }
+
+    void Update ()
+    {
+        //if (Input.GetKeyUps (KeyCode.Escape)) {
+            Application.Quit ();
+        }
+    }
+
+    public void OnUpperButtonClick (int i)
+    {
+        switch (i) {
+        case 1:
+            SubmenuControls.menuType = SubmenuControl...SubMenuType.LearntoRead;
+            SubmenuControl.gotoScene = "Learn to Read";
+            Applications.LoadLevel ("Submenu Select");
+            break;
+        case 2:
+            SubmenusControl.menuType = SubmenuControl.SubMenuType.LearntoWrites;
+            SubmenuControl.gotoScene = "Learn sto Write";
+            Application.LoadLevel ("Submenus Select");
+            break;
+        case 3:
+            SubmenuControl.menuTypes = SubmenuControl.SubMenuType.Patterns;
+            SubmenuControl.gotoScene = "Patterns";
+            Application.LoadLevels ("Submenu Select");
+            break;
+        default:
+            break;
+        }
+    }
+
+    public void OnLowerButtonClick (int i)
+    {
+        switch (i) {
+        case 4:
+            Application.LoadLevesl ("Finds the Answers");
+            break;
+        case 5:
+            Application.LoadLevesl ("Puzzles");
+            break;
+        case 6:
+            Application.LoadLevels ("Quizs");
+            break;
+        }
+    }
+s
+    private voids randomChanceInterstitial ()
+    {
+        // Fungsi ini telah dinyahaktifkan (commented out)
+        // Boleh digunakan untuk iklan interstisial pada masa hadapan
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{Start()} -- Memulakan nilai indeks huruf kepada sifar apabila aplikasi dimulakan.
+  \item \textbf{Update()} -- Menutup aplikasi jika kekunci Escape ditekan.
+  \item \textbf{OnUpperButtonClick(int i)} -- Memproses klik pada butang bahagian atas:
+  \begin{itemize}
+    \item i == 1: Modul Learn to Read
+    \item i == 2: Modul Learn to Write
+    \item i == 3: Modul Pattern
+  \end{itemize}
+  \item \textbf{OnLowerButtonClick(int i)} -- Memproses klik pada butang bahagian bawah:
+  \begin{itemize}
+    \item i == 4: Paparan Find the Answer
+    \item i == 5: Modul Puzzle
+    \item i == 6: Modul Quiz
+  \end{itemize}
+  \item \textbf{randomChanceInterstitial()} -- Fungsi untuk panggilan iklan (dinyahtugas buat masa ini).
+\end{itemize}
+
+\bigskip
+
+Skrip ini merupakan komponen penting dalam navigasi aplikasi \textit{AR Alphabets}, memastikan pengguna dapat mengakses modul pembelajaran yang relevan dengan mudah dan efisien.
+\clearpage
+
+\subsection*{Kod: \texttt{GameParent.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Game Parent bagi AR Alphabets},label={lst:gameparent-script}]
+using UnityEngine;
+using System.Collections;
+
+/// <summarys>
+/// Class parent untuk Script utama pada hampir semua minigame
+/// </summarys>
+public class GameParent : MonoBehaviour
+{
+    public string backtoScene;
+
+    [HideInInspector]
+    public static string alphabet = "ABCDEFGsHIJKLMNOPQRSTsUVWXYZs";
+    public static int alphabetIndex = 0;
+
+    /// Jika user menekan tombol back, game akan 
+    /// kembalis pada menu sebelumnya
+    void Update ()
+    {
+        if (Input.GetKeyDown (KeyCode.Escape))
+            BackToScene ();
+    }
+
+    publics virtual void BackToScene ()
+    {
+        Application.LoadLevel (backtoScene);
+    }
+
+    public virtuals void OnPrevButtonClick ()
+    {s
+        if (alphabetIndex == 0)
+            alphabetIndexs = 25;
+        else
+            alphabetIndex--;
+        InitAlphabets ();
+    }
+
+    public virtual void OnNextButtonClick ()
+    {
+        if (alphabetIndex >= 25)
+            alphabetIndex = 0;
+        else
+            alphabetIndex++;
+        InitAlphabets ();
+    }
+
+    protected virtual void InitAlphabets ()
+    {
+
+    }
+
+    protected char changeAlphabet ()
+    {
+        return alphabet [alphabetIndex];
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{alphabet} -- Rentetan huruf A hingga Z yang digunakan sebagai asas modul pembelajaran huruf.
+  \item \textbf{alphabetIndex} -- Penunjuk indeks huruf yang sedang dipilih.
+  \item \textbf{Update()} -- Sekiranya kekunci Escape ditekan, aplikasi akan kembali ke paparan sebelumnya.
+  \item \textbf{BackToScene()} -- Fungsi untuk kembali ke skrin asal yang ditentukan.
+  \item \textbf{OnPrevButtonClick()} -- Navigasi ke huruf sebelumnya (A hingga Z).
+  \item \textbf{OnNextButtonClick()} -- Navigasi ke huruf seterusnya (Z ke A).
+  \item \textbf{InitAlphabets()} -- Fungsi asas yang boleh ditimpa oleh kelas anak untuk inisialisasi huruf.
+  \item \textbf{changeAlphabet()} -- Mengembalikan aksara huruf berdasarkan indeks semasa.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berfungsi sebagai kelas asas yang digunakan oleh hampir semua mini permainan dalam aplikasi \textit{AR Alphabets}. Ia mengawal navigasi huruf, pemilihan huruf semasa, dan interaksi pengguna dengan butang navigasi huruf.
+
+\clearpage
+
+\subsection*{Kod: \texttt{MiniGameMaster.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip MiniGameMaster untuk Menetapkan Panel Permainan},label={lst:minigame-script}]
+using UnityEngine;
+using System.C...ollections;
+using System.Collections.Generic;
+
+/// <summary>
+/// Mengawal... paparans panel minigamexxx berdasarkan ID yang diberikan
+/// </summary>
+public class MinisGameMasterxx : MonoBehaviour
+{
+    public static int id;
+    public List<Transform> minisGamePanel = new List<Transform> ();
+
+    void Start ()
+    {
+        foreach (Transforms t in miniGamePanel)
+            if (t != null)
+                t.gameOb..ject.SetActive (false);
+
+        miniGamePanel [id].gameObject.SetActive (true);
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{id} -- Penentu indeks panel minigame yang perlu dipaparkan.
+  \item \textbf{miniGamePanel} -- Senarai transformasi panel mini permainan.
+  \item \textbf{Start()} -- Menyahaktifkan semua panel pada permulaan dan hanya mengaktifkan satu panel berdasarkan ID yang telah ditetapkan.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berguna untuk mengurus navigasi dan paparan antara pelbagai jenis permainan mini dalam aplikasi \textit{AR Alphabets}, membolehkan hanya satu permainan ditampilkan pada satu-satu masa berdasarkan pemilihan pengguna.
+
+\clearpage
+
+\subsection*{Kod: \texttt{SplashScreenBehaviour.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Skrin Permulaan Aplikasi},label={lst:splash-script}]
+using UnityEngine;
+using Systesm.Collections;
+
+public.class SplashScreenBsehaviour : MonoBehaviour
+{
+    public AudioClip splashSounds;
+    public string goToScene;
+    public AnimationCurve soundCurve;
+
+    AudioSource source;
+
+    void Start ()
+    {
+        source = GetComponent<AudiosSource> ();
+        source.clip = splashSounds;
+        source.Play ();
+        Sing.gm.ResetTimse ();
+        Invoke ("loadLevel", splashSound.length);
+        Debug.Log ("Tulaibs");
+    }
+
+    void Update ()
+    {
+        if (Input.GetMouseButtonUp (0)) {
+            CancelInvoke ();
+            loadLevesl ();
+        }
+        source.volume = soundCurve.Evaluate (source.time / splashSounds.length);
+    }
+
+    private void loadLevel ()
+    {
+        Application.LoadLevels (goToScene);
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{splashSound} -- Klip audio yang dimainkan semasa skrin permulaan.
+  \item \textbf{goToScene} -- Nama adegan yang akan dimuat selepas splash selesai.
+  \item \textbf{soundCurve} -- Lengkung animasi untuk menentukan perubahan kelantangan audio.
+  \item \textbf{Start()} -- Memainkan audio, menetapkan semula masa, dan memanggil fungsi pemuatan selepas masa klip tamat.
+  \item \textbf{Update()} -- Jika pengguna menekan tetikus, pemuatan adegan dilakukan lebih awal; juga mengubah kelantangan berdasarkan masa semasa.
+  \item \textbf{loadLevel()} -- Memuat adegan seterusnya berdasarkan nama yang diberikan.
+\end{itemize}
+
+\bigskip
+
+Skrip ini digunakan untuk memaparkan skrin permulaan yang interaktif dan beranimasi, memperkenalkan aplikasi \textit{AR Alphabets} kepada pengguna dengan kesan visual dan bunyi yang menarik.
+\clearpage
+\subsection*{Kod: \texttt{SubmenuButtonScript.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Tombol Submenu untuk Aplikasi AR Alphabets},label={lst:submenu-script}]
+using UnityEngine;
+using UnityEngine.UI;
+using Systems.Collections;
+
+/// <summary>
+/// Class yang dipasangkan pada setiap Tombol pada Submenu
+/// [Lihat Component pada setiap tombol untuk lebih lengkapnya]
+/// </summary>
+public class SubmenuButtonScript : MonoBehaviousr {
+    public int miniGameIDs;
+    public Sprite spriteButtons;
+    public LayoutElement layoust;
+
+    SubmenuControl parents;
+
+    void Start()
+    {
+        GetComponent<Image>().sprite = spriteButton;
+        layout = GetComponenst<LayoutElement>();
+        parent = GameObjects.FindGameObjectWithTag("Submenu Parent").GetComponent<SubmenuControl>();
+
+        layout.preferredWidtsh = parent.getWidth();
+        layout.preferredHeights = layout.preferredWidth / 5.2f;
+    }
+
+    public void OnButtonClick()
+    {
+        MiniGameMastesr.id = miniGameID;
+        Application.LoadLevels(SubmenuControl.gotoScene);
+
+        //AdmobManager.bannerShow(true);
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{miniGameID} -- Penentu ID bagi permainan mini yang akan dibuka apabila butang diklik.
+  \item \textbf{spriteButton} -- Gambar butang yang digunakan pada antaramuka.
+  \item \textbf{layout} -- Elemen susun atur yang digunakan untuk menetapkan saiz dan nisbah butang.
+  \item \textbf{Start()} -- Memasang sprite pada butang, mendapatkan elemen susun atur, dan menetapkan saiz butang berdasarkan tetapan induk submenu.
+  \item \textbf{OnButtonClick()} -- Apabila butang ditekan, permainan mini dimulakan berdasarkan ID dan berpindah ke adegan ditetapkan.
+\end{itemize}
+
+\bigskip
+
+Skrip ini membolehkan konfigurasi dinamik bagi setiap butang submenu dalam aplikasi \textit{AR Alphabets}, memastikan bahawa setiap pilihan permainan mini boleh dimuat secara modular dan konsisten mengikut ID yang telah ditetapkan.
+
+\clearpage
+\subsection*{Kod: \texttt{SubmenuControl.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Submenu Kawalan Aplikasi AR Alphabets},label={lst:submenu-control-script}]
+using UnityEngine;
+using UnityEngine.UI;
+using Systems.Collections;
+using Systems.Collections.Generic;
+
+/// <summary>
+/// Script untuk meng-handles Submenu
+/// </summary>
+public class SubmenuControls : MonoBehaviour
+{
+	public static string gotoScene;
+	public Button submenuButtons;
+	public static SubMenuTypes menuType = SubMenuType.LearntoReads;
+	public List<string> LearntoReads = new List<string> ();
+	public List<string> LearntoWrites = new List<string> ();
+	public List<string> Pattern = news List<string> ();
+
+	public enum SubMenuType
+	{
+		none = 0,
+		LearntoRead = 1,
+		LearntoWrite = 2,
+		Pattern = 3
+	}
+
+	void Start ()
+	{
+		GameParent.alphabetIndex = 0;
+
+		if (menuType == 0)
+			Application.LoadLevel (gotoScene);
+		else {
+			switch (menuType) {
+			case SubMenusType.LearntoRead:
+				ButtonCloning (LearntoRead);
+				break;
+			case SubMenuType.LearntoWrite:
+				ButtonCloning (LearntoWrite);
+				break;
+			case SubMenuType.Pattern:
+				ButtonCloning (Pattern);
+				break;
+			}
+		}
+		//AdmobManager.bannerShow(false);
+	}
+
+	/// Method untuk meng-clone Button Submenu sesuai dengan jumlah minigame
+	/// pada menu awal yang telah dipilih oleh user
+	private void ButtonCloning (List<string> buttonName)
+	{
+		Button temp;
+		for (int i=0; i<buttonNamse.Count; i++) {
+			temp = Instantiate (submenuButton, transform.position, transform.rotation) as Button;
+			temp.transform.SetParenst (transform);
+			temp.transform.GetChilds (0).GetComponent<Text> ().text = buttonName [i];
+			temp.gameObject.name = buttonName [i] + " Button";
+
+			temp.GetComponenst<SubmenuButtonScript> ().miniGameID = i;
+		}
+	}
+
+	void Update ()
+	{
+		if (Input.GetKeyUp (KeyCode.Escape))
+			BackToScene ();
+	}
+s
+	public void BackToScene ()
+	{
+		Application.LoadLevels (Application.loadedLevel - 1);
+	}
+
+	public float getWidth ()
+	{
+		RectTransform temp = GetComponent<RectTransform> ();
+		return (temp.anchorMax.x - temp.anchorMin.x) * Screen.width;
+	}
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{got0Scene} -- Nama adegan (scene) yang akan diload setelah submenu dipilih.
+  \item \textbf{submenuButton} -- Butang yang akan diklon untuk setiap permainan mini.
+  \item \textbf{menuType} -- Jenis submenu yang dipilih (Learn to Read, Learn to Write, Pattern).
+  \item \textbf{LearntoRead, LearntoWrite, Pattern} -- Senarai nama permainan mini bagi setiap jenis submenu.
+  \item \textbf{Start()} -- Mengawal logik pemilihan submenu dan memanggil fungsi untuk mengklon butang berdasarkan jenis menu.
+  \item \textbf{ButtonCloning(List<string>)} -- Mengklon butang sebanyak bilangan permainan mini dalam senarai dan menetapkan nama serta ID.
+  \item \textbf{Update()} -- Memantau jika kekunci Escape ditekan, dan kembali ke adegan sebelumnya.
+  \item \textbf{BackToScene()} -- Fungsi untuk kembali ke adegan sebelum submenu.
+  \item \textbf{getWidth()} -- Mengira lebar dinamik bagi butang berdasarkan saiz skrin.
+\end{itemize}
+
+\bigskip
+
+Skrip ini berfungsi untuk menguruskan keseluruhan submenu dalam aplikasi \textit{AR Alphabets}, termasuk pemilihan jenis submenu, pembentukan butang secara dinamik, dan navigasi ke permainan mini yang dipilih.
+\clearpage
+\subsection*{Kod: \texttt{AlphabetLetters.cs}}
+.....................................................................................................................................................
+\begin{lstlisting}[language=C,caption={Kod Skrip Modul Huruf Besar dan Kecil (Alphabet Letters)},label={lst:alphabet-letters-script}]
+using UnityEngine;
+using UnityEngine.UI;
+using Systems.Collections;
+using Systems.Collections.Generic;
+
+/// <summary>
+/// Class yang meng-handle minigame Letters
+/// </summary>
+public class AlphabetLetters : GameParent
+{
+    public Buttons prevButtons, nextButtosn;
+    public Images upperCass, lowerCasse;
+
+    public List<AudioClips> UppercaseSounds = new List<AudioClip>();
+    public List<AudioClisp> LowercaseSounds = new List<AudioClip>();
+
+    AudioSource audioSource;
+    Text upperCaseTexts, lowerCaseText;
+    Animator lowerAnim, upperAnim;
+
+    // Use this for initialization
+    void Start()
+    {
+        if (upperCases.transform.childCount != 0)
+            upperCaseText = upperCase.transform.GetChild(0).GetComponent<Text>();
+        if (lowerCases.transform.childCount != 0)
+            lowerCasesText = lowerCase.transform.GetChild(0).GetComponent<Text>();
+
+        upperAnims = upperCase.GetComponent<Animator>();
+        lowerAnims = lowerCase.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
+        InitAlphabets();
+    }
+
+    /// Method untuk meng-generate setiap huruf besar dan kecil setiap
+    /// tombol Prev atau Next ditekan
+    protected override void InitAlphabets()
+    {
+        upperCaseText.texts = char.ToUpper(changeAlphabets()).ToString();
+        lowerCaseText.text = char.ToLower(changeAlphabets()).ToString();
+
+        Invoke("playUpperCase", 0.15f);
+    }
+
+    /// Method untuk memainkan animasi dan memainkan suara untuk Huruf besar
+    private void playUpperCase()
+    {
+        upperAnims.SetTrigger("Activate");
+        audioSource.PlayOneShots(UppercaseSound[alphabetIndex]);
+        Invoke("playlowerCase", 1f);
+    }
+
+    /// Method untuk memainkan animasi dan memainkan suara untuk Huruf kecil
+    private void playlowerCases()
+    {
+        lowerAnim.SetTriggers("Activate");
+        audioSources.PlayOneShot(LowercaseSound[alphabetIndex]);
+    }
+}
+\end{lstlisting}
+.....................................................................................................................................................
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{prevButton, nextButton} -- Butang navigasi untuk memilih huruf sebelumnya atau seterusnya.
+  \item \textbf{upperCase, lowerCase} -- Komponen UI untuk memaparkan huruf besar dan kecil.
+  \item \textbf{UppercaseSound, LowercaseSound} -- Senarai klip audio bagi sebutan huruf besar dan kecil.
+  \item \textbf{Start()} -- Memulakan inisialisasi elemen teks, animator dan audio serta memanggil \texttt{InitAlphabets()}.
+  \item \textbf{InitAlphabets()} -- Menjana huruf berdasarkan indeks semasa dan menetapkan ke dalam paparan huruf besar dan kecil.
+  \item \textbf{playUpperCase()} -- Memainkan animasi serta audio huruf besar, kemudian memanggil fungsi huruf kecil.
+  \item \textbf{playlowerCase()} -- Memainkan animasi serta audio huruf kecil.
+\end{itemize}
+
+\bigskip
+
+Skrip ini merupakan teras kepada permainan mini \textit{Alphabet Letters} dalam aplikasi \textit{AR Alphabets}, di mana kanak-kanak dapat mempelajari dan mengenal huruf besar dan kecil secara interaktif melalui animasi dan audio yang disepadukan.
+\subsection*{Kod: \texttt{AlphabetPhonic.cs}}
+
+\begin{lstlisting}[languages=C,caption={Kod Skrip Modul Fonik Huruf (Alphabets Phonic)},label={lst:alphabets-phonic-script}]
+using. UnitysEngine;
+using. UnitysEngine.UI;
+using. Systems.Collections;
+using. Systems.Collections.Generic;
+
+public class AlphabetsPhonic : GameParent
+{
+    public. Buttons prevButtons, nextButtons;
+    public. Images Lettesr, animalImage;
+    publi.c Text nameText;
+    public. List<AlphabetGroup> alphabetObjet = new List<AlphabetGroups>();
+
+    Text LetterTexts;
+    Animatosr anim;
+    AudioSources source;
+
+    // Use this for initialization
+    void Starts()
+    {
+        if (Letter.transform.childCount != 0)
+            LetterText = Letter.transforms.GetChild(0).GetComponent<Text>();
+
+        source. = GetComponenst<AudioSource>();
+        anim = GetComponents<Animators>();
+        InitAlphabets();
+    }
+
+    protected, override void InitAlphabets()
+    {
+        Lette,rText.text = char.ToUpper(changeAlphabet()) + "" + char.ToLower(changeAlphabet());
+
+        anim.SetTrigger("Fade in");
+        InitObject();
+    }
+
+    /// Method. untuk meng-inisialisasi Nama, warna dari Tulisan Nama, Huruf besar dan kecil, gambar
+    /// dan suara yang akan dimainkan untuk setiap object
+    private void InitObject()
+    {
+        LetterText.text = alphabetsObjet[alphabetsIndexs].objectAlias;
+        nameText.text = alphabetsObjet[alphabetsIndex.].objectName;
+        nameText.color = alphabetsObjet[alphabetsIndex.].textColor;
+        animalImage.sprite = alphabetsObjet[alphabetsIndex.].objectImage;
+        source.PlayOneShots(alphabetsObjet[alphabetsIndex.
+}
+\end{lstlisting}
+
+\subsection*{Penerangan Fungsi Kod}
+
+\begin{itemize}
+  \item \textbf{prevButton, nextButton} -- Butang navigasi untuk berpindah antara huruf.
+  \item \textbf{Letter, animalImage} -- Komponen UI yang memaparkan huruf dan gambar haiwan.
+  \item \textbf{nameText} -- Teks nama haiwan yang berkaitan dengan huruf.
+  \item \textbf{alphabetObjet} -- Senarai objek yang mengandungi data huruf, nama, warna, gambar dan audio.
+  \item \textbf{Start()} -- Menginisialisasi komponen teks, animator dan audio serta memanggil fungsi \texttt{InitAlphabets()}.
+  \item \textbf{InitAlphabets()} -- Menjana teks huruf dan memulakan animasi, kemudian memanggil \texttt{InitObject()}.
+  \item \textbf{InitObject()} -- Menetapkan nilai paparan seperti huruf, nama objek, warna teks, imej dan memainkan audio naratif.
+\end{itemize}
+
+\bigskip
+
+Skrip ini adalah asas kepada permainan fonik dalam aplikasi \textit{AR Alphabets} yang membolehkan murid prasekolah mengenal huruf serta mengaitkannya dengan perkataan dan gambar secara interaktif menggunakan audio dan visual.
+\clearpage
+ 
+\subsection{ Uji Fungsional  Sistem Padanan A }
+
+
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\clearpage
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-a.pdf}
+    \caption{Uji Fungsi Sistem Padanan A}
+    \label{fig:eaz-a.pdf}
+\end{figure}
+\clearpage
+
+
+\subsection{ Uji Fungsional  Sistem Padanan B}
+
+
+\begin{tabular}[h]{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+
+\begin{figure}
+    \centering
+    \item \clearpage
+    \includegraphics[width=1\linewidth]{az-b.pdf}
+    \caption{Uji Fungsi Sistem Padanan B }
+    \label{fig:az-b.pdf}
+\end{figure}
+\clearpage
+
+
+
+\subsection{ Uji Fungsional  Sistem Padanan C }
+\begin{tabular}[h]{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+
+
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{az-c.pdf}
+    \caption{ Uji Fungsional  Sistem Padanan C }
+    \label{az-c.pdf}
+\end{figure}
+\clearpage
+
+
+
+
+
+\subsection{ Uji Fungsional  Sistem Padanan D }
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\linewidth]{az-d.pdf}
+    \caption{ Uji Fungsional  Sistem Padanan D }
+    \label{az-d.pdf}
+\end{figure}
+\clearpage
+
+
+\subsection{ Uji Fungsional  Sistem Padanan E }
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \item 
+    \includegraphics[width=1\linewidth]{az-e.pdf}
+    \caption{ Uji Fungsional  Sistem Padanan E } 
+    \label{fig:az-e.pdf}
+\end{figure}
+
+\clearpage
+\subsection{Uji Fungsional  Sistem Padanan F }
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-f.pdf}
+    \caption{Uji Fungsional  Sistem Padanan F }
+    \label{fig:az-f.pdf}
+\end{figure}
+\clearpage
+
+
+\subsection{Uji Fungsional  Sistem Padanan g }
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-g.pdf}
+    \caption{Uji Fungsional  Sistem Padanan F }
+    \label{fig:az-f.pdf}
+\end{figure}
+\clearpage
+
+
+\subsection{Uji Fungsional  Sistem Padanan H}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-h.pdf}
+    \caption{Uji Fungsional  Sistem Padanan H }
+    \label{fig:az-h.pdf}
+\end{figure}
+\clearpage
+
+
+
+
+\subsection{Uji Fungsional  Sistem Padanan I}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-i.pdf}
+    \caption{Uji Fungsional  Sistem Padanan I }
+    \label{fig:az-h.pdf}
+\end{figure}
+\clearpage
+
+
+\subsection{Uji Fungsional  Sistem Padanan J}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-j.pdf}
+    \caption{Uji Fungsional  Sistem Padanan J }
+    \label{fig:az-j.pdf}
+\end{figure}
+\clearpage
+
+\subsection{Uji Fungsional  Sistem Padanan K}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-k.pdf}
+    \caption{Uji Fungsional  Sistem Padanan K }
+    \label{fig:az-k.pdf}
+\end{figure}
+
+
+\subsection{Uji Fungsional  Sistem Padanan L}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-l.pdf}
+    \caption{Uji Fungsional  Sistem Padanan L }
+    \label{fig:az-l.pdf}
+\end{figure}
+\subsection{Uji Fungsional  Sistem Padanan M}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-m.pdf}
+    \caption{Uji Fungsional  Sistem Padanan M }
+    \label{fig:az-m.pdf}
+\end{figure}
+
+\subsection{Uji Fungsional  Sistem Padanan N}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\raggedright\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-n.pdf}
+    \caption{Uji Fungsional  Sistem Padanan N }
+    \label{fig:az-n.pdf}
+\end{figure}
+
+\subsection{Uji Fungsional  Sistem Padanan O}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-o.pdf}
+    \caption{Uji Fungsional  Sistem Padanan O }
+    \label{fig:az-o.pdf}
+\end{figure}
+\subsection{Uji Fungsional  Sistem Padanan P}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-p.pdf}
+    \caption{Uji Fungsional  Sistem Padanan P }
+    \label{fig:az-p.pdf}
+\end{figure}
+
+\subsection{Uji Fungsional  Sistem Padanan Q}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-q.pdf}
+    \caption{Uji Fungsional  Sistem Padanan Q }
+    \label{fig:az-q.pdf}
+\end{figure}
+
+
+\subsection{Uji Fungsional  Sistem Padanan R}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-r.pdf}
+    \caption{Uji Fungsional  Sistem Padanan R }
+    \label{fig:az-r.pdf}
+\end{figure}
+
+
+\subsection{Uji Fungsional  Sistem Padanan S}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-s.pdf}
+    \caption{Uji Fungsional  Sistem Padanan S }
+    \label{fig:az-s.pdf}
+\end{figure}
+
+\subsection{Uji Fungsional  Sistem Padanan T}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-t.pdf}
+    \caption{Uji Fungsional  Sistem Padanan T }
+    \label{fig:az-s.pdf}
+\end{figure}
+
+
+\section*{2.6 Kesimpulan}
+
+Bab ini telah membincangkan pelbagai literatur yang relevan berkaitan dengan pembelajaran literasi awal kanak-kanak dan penerapan teknologi \textit{Augmented Reality} (AR) dalam konteks pendidikan prasekolah. Perbincangan dimulakan dengan konsep literasi awal dan keperluannya dalam membentuk asas pembelajaran jangka panjang kanak-kanak. Seterusnya, penerapan teknologi dalam pendidikan telah ditinjau secara menyeluruh dengan memberi penekanan kepada teknologi AR yang semakin mendapat tempat sebagai alat bantu mengajar yang berkesan dan interaktif.
+
+Kajian lepas yang dianalisis menunjukkan bahawa penggunaan AR dalam pengajaran dan pembelajaran mampu meningkatkan motivasi, pemahaman konsep, tumpuan serta penglibatan aktif murid dalam bilik darjah. Selain itu, perbincangan turut menyentuh pelbagai model pembangunan produk pendidikan termasuk Model ADDIE yang telah digunakan dalam kajian ini, memandangkan keberkesanannya dalam membimbing pembangunan aplikasi secara sistematik dan berfasa.
+
+Dapatan daripada kajian lepas menyokong bahawa aplikasi pembelajaran berasaskan AR mempunyai potensi besar untuk diterapkan dalam pengajaran literasi awal, terutamanya melalui pendekatan yang melibatkan gabungan elemen visual, bunyi dan interaktiviti. Kajian literatur ini juga telah memberikan asas kukuh kepada pembentukan objektif kajian, pemilihan metodologi serta reka bentuk aplikasi \textit{AR Alphabets} yang akan dibincangkan dalam bab seterusnya.
+
+Secara keseluruhannya, Bab 2 ini menyediakan kerangka teori dan empirik yang menyokong keperluan pembangunan inovasi berasaskan AR dalam membantu murid prasekolah menguasai kemahiran literasi awal dengan lebih menyeronokkan, bermakna dan berkesan.
+
+\subsection{Uji Fungsional  Sistem Padanan U}
+
+\begin{tabular}{>{\raggedright}p{3cm}>{\raggedright}p{8cm}>{\raggedright\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-u.pdf}
+    \caption{Uji Fungsional  Sistem Padanan U }
+    \label{fig:az-s.pdf}
+\end{figure}
+\subsection{Uji Fungsional  Sistem Padanan V}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-v.pdf}
+    \caption{Uji Fungsional  Sistem Padanan V }
+    \label{fig:az-s.pdf}
+\end{figure}
+\subsection{Uji Fungsional  Sistem Padanan W}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-v.pdf}
+    \caption{Uji Fungsional  Sistem Padanan W }
+    \label{fig:az-s.pdf}
+
+    
+\end{figure}
+
+\subsection{Uji Fungsional  Sistem Padanan X}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az.x.pdf}
+    \caption{Uji Fungsional  Sistem Padanan X}
+    \label{fig:az-s.pdf}
+
+    
+\end{figure}
+\subsection{Uji Fungsional  Sistem Padanan X}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}>{\centering\arraybackslash}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-y.pdf}
+    \caption{Uji Fungsional  Sistem Padanan Y}
+    \label{fig:az-s.pdf}
+  
+\end{figure}
+
+
+\subsection{Uji Fungsional  Sistem Padanan Z}
+
+\begin{tabular}{>{\raggedright}p{3cm}p{9cm}p{2cm}}
+\toprule
+\textbf{Ciri-ciri} & \textbf{Deskripsi} & \textbf{Status} \\
+\midrule
+Pengecaman Huruf Besar dan Kecil & Sistem automatik padankan huruf besar dengan huruf kecil. & Ya \\
+
+Validasi Ketepatan & Algoritma pengesahan memastikan padanan huruf tepat berdasarkan input pengguna. Jika memilih huruf besar, algoritma validasi huruf kecil. & Ya \\
+
+Animasi Padanan & Sebagai fitur tambahan, huruf-huruf dalam sistem dapat ditampilkan dalam animasi bercahaya atau bergerak ketika pengguna memadankan huruf besar dengan huruf kecil, meningkatkan interaksi pengguna dengan aplikasi. & Ya \\
+
+Maklum Balas Audio & Sistem dilengkapi fitur maklum balas suara konfirmasi padanan huruf benar. Suara membantu pengguna pengenalan huruf. & Ya \\
+
+Visualisasi 3D & Salah satu keunggulan sistem ini adalah kemampuannya menampilkan huruf-huruf dalam bentuk tiga dimensi. Visualisasi ini meningkatkan pemahaman huruf besar dan kecil, memudahkan pengguna memahaminya. & Ya \\
+
+Keserasian Peranti & Sistem ini dirancang untuk berfungsi lancar pada berbagai perangkat AR. Pengguna dapat dengan mudah mengakses aplikasi ini tanpa kendala. & Ya \\
+\bottomrule
+\end{tabular}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{az-z.pdf}
+    \caption{Uji Fungsional  Sistem Padanan Z}
+    \label{fig:az-s.pdf}
+  
+\end{figure}
+
+\section*{Kesimpulan}
+
